@@ -13,4 +13,4 @@ El dispositivo será controlado con un mando inalámbrico mediante un módulo bl
 
 En cuanto al sensor, siempre estará posicionado en el sentido del desplazamiento del conjunto, con el fin de evitar colisiones. En caso de desplazarse en reversa, no será contemplado su funcionamiento. De detectar una posible colisión, provocará una parada de todos los motores y analizará una posible ruta sin obstáculos.
 
-![alt text](https://www.overleaf.com/project/5d6da20ac6fbc92ad976c830/file/5d8bc9b4bc45c70001951ff8)
+![imagen](https://i1.wp.com/makezine.com/wp-content/uploads/2017/05/QuadFigureB.png?resize=620%2C190&ssl=1)
