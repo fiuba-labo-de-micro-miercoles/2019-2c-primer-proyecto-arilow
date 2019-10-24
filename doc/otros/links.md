@@ -7,4 +7,12 @@
 ## proyectos similares
 <https://www.prometec.net/mblock-4bot-movimientos/>
 <https://makezine.com/2016/11/22/robot-quadruped-arduino-program/>
+
+
+## joystick ps2
 <https://virushardrive.wordpress.com/tag/robot-cuadrupedo-arduino/> (joystick ps2)
+<http://www.rhydolabz.com/wiki/?p=12663>
+<https://github.com/madsci1016/Arduino-PS2X>
+
+## HC-SR04
+<https://circuitdigest.com/microcontroller-projects/distance-measurement-using-hc-sr04-avr>

@@ -1,0 +1,44 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega328P</DEVICE>
+ <WORKING_DIR>C:\Programming\2019-2c-primer-proyecto-arilow\codigo</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\M328PDEF.INC</FILE>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\Proyecto.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\Proyecto.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\Proyecto.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>13</LINE></MAIN>
+  <MOVEMENT_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>3</LINE></MOVEMENT_SETUP>
+  <LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>22</LINE></LOOP>
+  <ERRLOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>28</LINE></ERRLOOP>
+  <I2C_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>25</LINE></I2C_SETUP>
+  <I2C_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>50</LINE></I2C_START>
+  <WAIT_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>55</LINE></WAIT_START>
+  <I2C_PUT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>73</LINE></I2C_PUT>
+  <NEXT1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>74</LINE></NEXT1>
+  <WAIT_DONE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>83</LINE></WAIT_DONE>
+  <I2C_GETACK><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>92</LINE></I2C_GETACK>
+  <I2C_GET><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>102</LINE></I2C_GET>
+  <I2C_GETNACK><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>98</LINE></I2C_GETNACK>
+  <WAIT_FOR_BYTE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>103</LINE></WAIT_FOR_BYTE>
+  <I2C_STOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>112</LINE></I2C_STOP>
+  <Check1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>117</LINE></Check1>
+  <PCA9685_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>8</LINE></PCA9685_SETUP>
+  <PCA9685_MOVE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>37</LINE></PCA9685_MOVE>
+ </LABELS>
+</ASSEMBLER_INFO>
