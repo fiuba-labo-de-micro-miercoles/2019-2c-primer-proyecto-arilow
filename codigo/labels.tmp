@@ -11,6 +11,7 @@
   <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE>
   <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE>
   <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE>
+  <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\Proyecto.obj</FILE>
@@ -22,23 +23,33 @@
   <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\Proyecto.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <MAIN><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>13</LINE></MAIN>
+  <MAIN><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>17</LINE></MAIN>
+  <EXT_INT0><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>72</LINE></EXT_INT0>
+  <TIM1_OVF><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>84</LINE></TIM1_OVF>
   <MOVEMENT_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>3</LINE></MOVEMENT_SETUP>
-  <LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>22</LINE></LOOP>
-  <ERRLOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>28</LINE></ERRLOOP>
-  <I2C_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>25</LINE></I2C_SETUP>
-  <I2C_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>50</LINE></I2C_START>
-  <WAIT_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>55</LINE></WAIT_START>
-  <I2C_PUT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>73</LINE></I2C_PUT>
+  <MAIN_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>31</LINE></MAIN_LOOP>
+  <MOVEMENT_TEST><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>7</LINE></MOVEMENT_TEST>
+  <TURN_ON><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>38</LINE></TURN_ON>
+  <TURN_OFF><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>43</LINE></TURN_OFF>
+  <ERRLOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>50</LINE></ERRLOOP>
+  <I2C_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>21</LINE></I2C_SETUP>
+  <I2C_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>48</LINE></I2C_START>
+  <WAIT_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>54</LINE></WAIT_START>
+  <I2C_PUT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>72</LINE></I2C_PUT>
   <NEXT1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>74</LINE></NEXT1>
-  <WAIT_DONE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>83</LINE></WAIT_DONE>
-  <I2C_GETACK><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>92</LINE></I2C_GETACK>
-  <I2C_GET><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>102</LINE></I2C_GET>
-  <I2C_GETNACK><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>98</LINE></I2C_GETNACK>
-  <WAIT_FOR_BYTE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>103</LINE></WAIT_FOR_BYTE>
-  <I2C_STOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>112</LINE></I2C_STOP>
-  <Check1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>117</LINE></Check1>
-  <PCA9685_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>8</LINE></PCA9685_SETUP>
-  <PCA9685_MOVE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>37</LINE></PCA9685_MOVE>
+  <WAIT_DONE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>80</LINE></WAIT_DONE>
+  <I2C_GET><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>87</LINE></I2C_GET>
+  <WAIT_FOR_BYTE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>89</LINE></WAIT_FOR_BYTE>
+  <I2C_STOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>98</LINE></I2C_STOP>
+  <Check1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>103</LINE></Check1>
+  <PCA9685_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>13</LINE></PCA9685_SETUP>
+  <PCA9685_MOVE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>42</LINE></PCA9685_MOVE>
+  <DELAY_05><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>52</LINE></DELAY_05>
+  <HCSR04_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>1</LINE></HCSR04_SETUP>
+  <HCSR04_READ><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>18</LINE></HCSR04_READ>
+  <HCSR04_LOOP2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>35</LINE></HCSR04_LOOP2>
+  <HCSR04_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>40</LINE></HCSR04_LOOP>
+  <outer_loop><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>57</LINE></outer_loop>
+  <delay_loop><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>60</LINE></delay_loop>
  </LABELS>
 </ASSEMBLER_INFO>
