@@ -1,0 +1,66 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.7</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\default</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\M328PDEF.INC</FILE>
+  <FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE>
+  <FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC</FILE>
+  <FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE>
+  <FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\default\Proyecto.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Proyecto.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Proyecto.map</FILE>
+  <FILE>Proyecto.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm</FILE><LINE>17</LINE></MAIN>
+  <EXT_INT0><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>72</LINE></EXT_INT0>
+  <TIM1_OVF><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>84</LINE></TIM1_OVF>
+  <MOVEMENT_SETUP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>6</LINE></MOVEMENT_SETUP>
+  <MAIN_LOOP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm</FILE><LINE>49</LINE></MAIN_LOOP>
+  <MOVEMENT_LEG_1><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>53</LINE></MOVEMENT_LEG_1>
+  <TURN_ON><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm</FILE><LINE>60</LINE></TURN_ON>
+  <TURN_OFF><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm</FILE><LINE>65</LINE></TURN_OFF>
+  <ERRLOOP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm</FILE><LINE>72</LINE></ERRLOOP>
+  <I2C_SETUP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>21</LINE></I2C_SETUP>
+  <I2C_START><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>48</LINE></I2C_START>
+  <WAIT_START><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>54</LINE></WAIT_START>
+  <I2C_PUT><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>72</LINE></I2C_PUT>
+  <NEXT1><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>74</LINE></NEXT1>
+  <WAIT_DONE><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>80</LINE></WAIT_DONE>
+  <I2C_GET><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>87</LINE></I2C_GET>
+  <WAIT_FOR_BYTE><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>89</LINE></WAIT_FOR_BYTE>
+  <I2C_STOP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>98</LINE></I2C_STOP>
+  <Check1><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC</FILE><LINE>103</LINE></Check1>
+  <PCA9685_SETUP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC</FILE><LINE>13</LINE></PCA9685_SETUP>
+  <PCA9685_MOVE><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC</FILE><LINE>42</LINE></PCA9685_MOVE>
+  <MOVEMENT_DELAY><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>186</LINE></MOVEMENT_DELAY>
+  <MOVEMENT_LEG_2><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>77</LINE></MOVEMENT_LEG_2>
+  <MOVEMENT_LEG_3><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>100</LINE></MOVEMENT_LEG_3>
+  <MOVEMENT_LEG_4><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>123</LINE></MOVEMENT_LEG_4>
+  <MOVEMENT_TEST><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>145</LINE></MOVEMENT_TEST>
+  <MOVEMENT_OUTER_LOOP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>191</LINE></MOVEMENT_OUTER_LOOP>
+  <MOVEMENT_DELAY_LOOP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC</FILE><LINE>194</LINE></MOVEMENT_DELAY_LOOP>
+  <HCSR04_SETUP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>1</LINE></HCSR04_SETUP>
+  <HCSR04_READ><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>18</LINE></HCSR04_READ>
+  <HCSR04_LOOP2><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>35</LINE></HCSR04_LOOP2>
+  <HCSR04_LOOP><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>40</LINE></HCSR04_LOOP>
+  <delay_05><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>52</LINE></delay_05>
+  <outer_loop><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>57</LINE></outer_loop>
+  <delay_loop><FILE>C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC</FILE><LINE>60</LINE></delay_loop>
+ </LABELS>
+</ASSEMBLER_INFO>
