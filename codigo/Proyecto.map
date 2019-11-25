@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.42  C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm Wed Nov 13 20:26:54 2019
+AVRASM ver. 2.2.7  C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm Tue Nov 19 15:37:32 2019
 
 
 EQU  SIGNATURE_000 0000001e
@@ -541,10 +541,12 @@ EQU  CLKPS2       00000002
 EQU  CLKPS3       00000003
 EQU  CLKPCE       00000007
 EQU  SELFPRGEN    00000000
+EQU  SPMEN        00000000
 EQU  PGERS        00000001
 EQU  PGWRT        00000002
 EQU  BLBSET       00000003
 EQU  RWWSRE       00000004
+EQU  SIGRD        00000005
 EQU  RWWSB        00000006
 EQU  SPMIE        00000007
 EQU  IVCE         00000000

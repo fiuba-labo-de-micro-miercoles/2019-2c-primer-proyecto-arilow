@@ -1,5 +1,5 @@
-.def        temp =r20            ;worker register
-.def        I2C_DATA =r21
+;.def        temp =r20            ;worker register
+;.def        I2C_DATA =r21
 
 ; Equate statements
 .equ        start        		= $08        ; Start Condition
