@@ -1,0 +1,2705 @@
+
+AVRASM ver. 2.2.7  C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm Tue Nov 26 16:36:06 2019
+
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(1): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\M328PDEF.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(112): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\DEFINES.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\DEFINES.INC(13): warning: Register r24 already defined by the .DEF directive
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(112): 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\DEFINES.INC' included form here
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\DEFINES.INC(14): warning: Register r25 already defined by the .DEF directive
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(112): 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\DEFINES.INC' included form here
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(113): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\ANGULOS.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(114): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC(12): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC(1): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(115): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC'
+[builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\m328pdef.inc'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(1): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.3.300\avrasm\inc\M328PDEF.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(112): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\DEFINES.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(113): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\ANGULOS.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(114): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\MOVEMENT.INC(12): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\PCA9685.INC(1): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\I2C.INC'
+C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\main.asm(115): Including file 'C:\Users\pc\Desktop\FIUBA\Electronica\Labo\Proyecto\copia_proyecto\codigo\HCSR04.INC'
+                                 
+                                 .INCLUDE 	"M328PDEF.INC"
+                                 
+                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
+                                 ;*************************************************************************
+                                 ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
+                                 ;* 
+                                 ;* Number            : AVR000
+                                 ;* File Name         : "m328Pdef.inc"
+                                 ;* Title             : Register/Bit Definitions for the ATmega328P
+                                 ;* Date              : 2011-02-09
+                                 ;* Version           : 2.35
+                                 ;* Support E-mail    : avr@atmel.com
+                                 ;* Target MCU        : ATmega328P
+                                 ;* 
+                                 ;* DESCRIPTION
+                                 ;* When including this file in the assembly program file, all I/O register 
+                                 ;* names and I/O register bit names appearing in the data book can be used.
+                                 ;* In addition, the six registers forming the three data pointers X, Y and 
+                                 ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
+                                 ;* SRAM is also defined 
+                                 ;* 
+                                 ;* The Register names are represented by their hexadecimal address.
+                                 ;* 
+                                 ;* The Register Bit names are represented by their bit number (0-7).
+                                 ;* 
+                                 ;* Please observe the difference in using the bit names with instructions
+                                 ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
+                                 ;* (skip if bit in register set/cleared). The following example illustrates
+                                 ;* this:
+                                 ;* 
+                                 ;* in    r16,PORTB             ;read PORTB latch
+                                 ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
+                                 ;* out   PORTB,r16             ;output to PORTB
+                                 ;* 
+                                 ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
+                                 ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
+                                 ;* rjmp  TOV0_is_set           ;jump if set
+                                 ;* ...                         ;otherwise do something else
+                                 ;*************************************************************************
+                                 
+                                 #ifndef _M328PDEF_INC_
+                                 #define _M328PDEF_INC_
+                                 
+                                 
+                                 #pragma partinc 0
+                                 
+                                 ; ***** SPECIFY DEVICE ***************************************************
+                                 .device ATmega328P
+                                 #pragma AVRPART ADMIN PART_NAME ATmega328P
+                                 .equ	SIGNATURE_000	= 0x1e
+                                 .equ	SIGNATURE_001	= 0x95
+                                 .equ	SIGNATURE_002	= 0x0f
+                                 
+                                 #pragma AVRPART CORE CORE_VERSION V2E
+                                 
+                                 
+                                 ; ***** I/O REGISTER DEFINITIONS *****************************************
+                                 ; NOTE:
+                                 ; Definitions marked "MEMORY MAPPED"are extended I/O ports
+                                 ; and cannot be used with IN/OUT instructions
+                                 .equ	UDR0	= 0xc6	; MEMORY MAPPED
+                                 .equ	UBRR0L	= 0xc4	; MEMORY MAPPED
+                                 .equ	UBRR0H	= 0xc5	; MEMORY MAPPED
+                                 .equ	UCSR0C	= 0xc2	; MEMORY MAPPED
+                                 .equ	UCSR0B	= 0xc1	; MEMORY MAPPED
+                                 .equ	UCSR0A	= 0xc0	; MEMORY MAPPED
+                                 .equ	TWAMR	= 0xbd	; MEMORY MAPPED
+                                 .equ	TWCR	= 0xbc	; MEMORY MAPPED
+                                 .equ	TWDR	= 0xbb	; MEMORY MAPPED
+                                 .equ	TWAR	= 0xba	; MEMORY MAPPED
+                                 .equ	TWSR	= 0xb9	; MEMORY MAPPED
+                                 .equ	TWBR	= 0xb8	; MEMORY MAPPED
+                                 .equ	ASSR	= 0xb6	; MEMORY MAPPED
+                                 .equ	OCR2B	= 0xb4	; MEMORY MAPPED
+                                 .equ	OCR2A	= 0xb3	; MEMORY MAPPED
+                                 .equ	TCNT2	= 0xb2	; MEMORY MAPPED
+                                 .equ	TCCR2B	= 0xb1	; MEMORY MAPPED
+                                 .equ	TCCR2A	= 0xb0	; MEMORY MAPPED
+                                 .equ	OCR1BL	= 0x8a	; MEMORY MAPPED
+                                 .equ	OCR1BH	= 0x8b	; MEMORY MAPPED
+                                 .equ	OCR1AL	= 0x88	; MEMORY MAPPED
+                                 .equ	OCR1AH	= 0x89	; MEMORY MAPPED
+                                 .equ	ICR1L	= 0x86	; MEMORY MAPPED
+                                 .equ	ICR1H	= 0x87	; MEMORY MAPPED
+                                 .equ	TCNT1L	= 0x84	; MEMORY MAPPED
+                                 .equ	TCNT1H	= 0x85	; MEMORY MAPPED
+                                 .equ	TCCR1C	= 0x82	; MEMORY MAPPED
+                                 .equ	TCCR1B	= 0x81	; MEMORY MAPPED
+                                 .equ	TCCR1A	= 0x80	; MEMORY MAPPED
+                                 .equ	DIDR1	= 0x7f	; MEMORY MAPPED
+                                 .equ	DIDR0	= 0x7e	; MEMORY MAPPED
+                                 .equ	ADMUX	= 0x7c	; MEMORY MAPPED
+                                 .equ	ADCSRB	= 0x7b	; MEMORY MAPPED
+                                 .equ	ADCSRA	= 0x7a	; MEMORY MAPPED
+                                 .equ	ADCH	= 0x79	; MEMORY MAPPED
+                                 .equ	ADCL	= 0x78	; MEMORY MAPPED
+                                 .equ	TIMSK2	= 0x70	; MEMORY MAPPED
+                                 .equ	TIMSK1	= 0x6f	; MEMORY MAPPED
+                                 .equ	TIMSK0	= 0x6e	; MEMORY MAPPED
+                                 .equ	PCMSK1	= 0x6c	; MEMORY MAPPED
+                                 .equ	PCMSK2	= 0x6d	; MEMORY MAPPED
+                                 .equ	PCMSK0	= 0x6b	; MEMORY MAPPED
+                                 .equ	EICRA	= 0x69	; MEMORY MAPPED
+                                 .equ	PCICR	= 0x68	; MEMORY MAPPED
+                                 .equ	OSCCAL	= 0x66	; MEMORY MAPPED
+                                 .equ	PRR	= 0x64	; MEMORY MAPPED
+                                 .equ	CLKPR	= 0x61	; MEMORY MAPPED
+                                 .equ	WDTCSR	= 0x60	; MEMORY MAPPED
+                                 .equ	SREG	= 0x3f
+                                 .equ	SPL	= 0x3d
+                                 .equ	SPH	= 0x3e
+                                 .equ	SPMCSR	= 0x37
+                                 .equ	MCUCR	= 0x35
+                                 .equ	MCUSR	= 0x34
+                                 .equ	SMCR	= 0x33
+                                 .equ	ACSR	= 0x30
+                                 .equ	SPDR	= 0x2e
+                                 .equ	SPSR	= 0x2d
+                                 .equ	SPCR	= 0x2c
+                                 .equ	GPIOR2	= 0x2b
+                                 .equ	GPIOR1	= 0x2a
+                                 .equ	OCR0B	= 0x28
+                                 .equ	OCR0A	= 0x27
+                                 .equ	TCNT0	= 0x26
+                                 .equ	TCCR0B	= 0x25
+                                 .equ	TCCR0A	= 0x24
+                                 .equ	GTCCR	= 0x23
+                                 .equ	EEARH	= 0x22
+                                 .equ	EEARL	= 0x21
+                                 .equ	EEDR	= 0x20
+                                 .equ	EECR	= 0x1f
+                                 .equ	GPIOR0	= 0x1e
+                                 .equ	EIMSK	= 0x1d
+                                 .equ	EIFR	= 0x1c
+                                 .equ	PCIFR	= 0x1b
+                                 .equ	TIFR2	= 0x17
+                                 .equ	TIFR1	= 0x16
+                                 .equ	TIFR0	= 0x15
+                                 .equ	PORTD	= 0x0b
+                                 .equ	DDRD	= 0x0a
+                                 .equ	PIND	= 0x09
+                                 .equ	PORTC	= 0x08
+                                 .equ	DDRC	= 0x07
+                                 .equ	PINC	= 0x06
+                                 .equ	PORTB	= 0x05
+                                 .equ	DDRB	= 0x04
+                                 .equ	PINB	= 0x03
+                                 
+                                 
+                                 ; ***** BIT DEFINITIONS **************************************************
+                                 
+                                 ; ***** USART0 ***********************
+                                 ; UDR0 - USART I/O Data Register
+                                 .equ	UDR0_0	= 0	; USART I/O Data Register bit 0
+                                 .equ	UDR0_1	= 1	; USART I/O Data Register bit 1
+                                 .equ	UDR0_2	= 2	; USART I/O Data Register bit 2
+                                 .equ	UDR0_3	= 3	; USART I/O Data Register bit 3
+                                 .equ	UDR0_4	= 4	; USART I/O Data Register bit 4
+                                 .equ	UDR0_5	= 5	; USART I/O Data Register bit 5
+                                 .equ	UDR0_6	= 6	; USART I/O Data Register bit 6
+                                 .equ	UDR0_7	= 7	; USART I/O Data Register bit 7
+                                 
+                                 ; UCSR0A - USART Control and Status Register A
+                                 .equ	MPCM0	= 0	; Multi-processor Communication Mode
+                                 .equ	U2X0	= 1	; Double the USART transmission speed
+                                 .equ	UPE0	= 2	; Parity Error
+                                 .equ	DOR0	= 3	; Data overRun
+                                 .equ	FE0	= 4	; Framing Error
+                                 .equ	UDRE0	= 5	; USART Data Register Empty
+                                 .equ	TXC0	= 6	; USART Transmitt Complete
+                                 .equ	RXC0	= 7	; USART Receive Complete
+                                 
+                                 ; UCSR0B - USART Control and Status Register B
+                                 .equ	TXB80	= 0	; Transmit Data Bit 8
+                                 .equ	RXB80	= 1	; Receive Data Bit 8
+                                 .equ	UCSZ02	= 2	; Character Size
+                                 .equ	TXEN0	= 3	; Transmitter Enable
+                                 .equ	RXEN0	= 4	; Receiver Enable
+                                 .equ	UDRIE0	= 5	; USART Data register Empty Interrupt Enable
+                                 .equ	TXCIE0	= 6	; TX Complete Interrupt Enable
+                                 .equ	RXCIE0	= 7	; RX Complete Interrupt Enable
+                                 
+                                 ; UCSR0C - USART Control and Status Register C
+                                 .equ	UCPOL0	= 0	; Clock Polarity
+                                 .equ	UCSZ00	= 1	; Character Size
+                                 .equ	UCPHA0	= UCSZ00	; For compatibility
+                                 .equ	UCSZ01	= 2	; Character Size
+                                 .equ	UDORD0	= UCSZ01	; For compatibility
+                                 .equ	USBS0	= 3	; Stop Bit Select
+                                 .equ	UPM00	= 4	; Parity Mode Bit 0
+                                 .equ	UPM01	= 5	; Parity Mode Bit 1
+                                 .equ	UMSEL00	= 6	; USART Mode Select
+                                 .equ	UMSEL0	= UMSEL00	; For compatibility
+                                 .equ	UMSEL01	= 7	; USART Mode Select
+                                 .equ	UMSEL1	= UMSEL01	; For compatibility
+                                 
+                                 ; UBRR0H - USART Baud Rate Register High Byte
+                                 .equ	UBRR8	= 0	; USART Baud Rate Register bit 8
+                                 .equ	UBRR9	= 1	; USART Baud Rate Register bit 9
+                                 .equ	UBRR10	= 2	; USART Baud Rate Register bit 10
+                                 .equ	UBRR11	= 3	; USART Baud Rate Register bit 11
+                                 
+                                 ; UBRR0L - USART Baud Rate Register Low Byte
+                                 .equ	_UBRR0	= 0	; USART Baud Rate Register bit 0
+                                 .equ	_UBRR1	= 1	; USART Baud Rate Register bit 1
+                                 .equ	UBRR2	= 2	; USART Baud Rate Register bit 2
+                                 .equ	UBRR3	= 3	; USART Baud Rate Register bit 3
+                                 .equ	UBRR4	= 4	; USART Baud Rate Register bit 4
+                                 .equ	UBRR5	= 5	; USART Baud Rate Register bit 5
+                                 .equ	UBRR6	= 6	; USART Baud Rate Register bit 6
+                                 .equ	UBRR7	= 7	; USART Baud Rate Register bit 7
+                                 
+                                 
+                                 ; ***** TWI **************************
+                                 ; TWAMR - TWI (Slave) Address Mask Register
+                                 .equ	TWAM0	= 1	; 
+                                 .equ	TWAMR0	= TWAM0	; For compatibility
+                                 .equ	TWAM1	= 2	; 
+                                 .equ	TWAMR1	= TWAM1	; For compatibility
+                                 .equ	TWAM2	= 3	; 
+                                 .equ	TWAMR2	= TWAM2	; For compatibility
+                                 .equ	TWAM3	= 4	; 
+                                 .equ	TWAMR3	= TWAM3	; For compatibility
+                                 .equ	TWAM4	= 5	; 
+                                 .equ	TWAMR4	= TWAM4	; For compatibility
+                                 .equ	TWAM5	= 6	; 
+                                 .equ	TWAMR5	= TWAM5	; For compatibility
+                                 .equ	TWAM6	= 7	; 
+                                 .equ	TWAMR6	= TWAM6	; For compatibility
+                                 
+                                 ; TWBR - TWI Bit Rate register
+                                 .equ	TWBR0	= 0	; 
+                                 .equ	TWBR1	= 1	; 
+                                 .equ	TWBR2	= 2	; 
+                                 .equ	TWBR3	= 3	; 
+                                 .equ	TWBR4	= 4	; 
+                                 .equ	TWBR5	= 5	; 
+                                 .equ	TWBR6	= 6	; 
+                                 .equ	TWBR7	= 7	; 
+                                 
+                                 ; TWCR - TWI Control Register
+                                 .equ	TWIE	= 0	; TWI Interrupt Enable
+                                 .equ	TWEN	= 2	; TWI Enable Bit
+                                 .equ	TWWC	= 3	; TWI Write Collition Flag
+                                 .equ	TWSTO	= 4	; TWI Stop Condition Bit
+                                 .equ	TWSTA	= 5	; TWI Start Condition Bit
+                                 .equ	TWEA	= 6	; TWI Enable Acknowledge Bit
+                                 .equ	TWINT	= 7	; TWI Interrupt Flag
+                                 
+                                 ; TWSR - TWI Status Register
+                                 .equ	TWPS0	= 0	; TWI Prescaler
+                                 .equ	TWPS1	= 1	; TWI Prescaler
+                                 .equ	TWS3	= 3	; TWI Status
+                                 .equ	TWS4	= 4	; TWI Status
+                                 .equ	TWS5	= 5	; TWI Status
+                                 .equ	TWS6	= 6	; TWI Status
+                                 .equ	TWS7	= 7	; TWI Status
+                                 
+                                 ; TWDR - TWI Data register
+                                 .equ	TWD0	= 0	; TWI Data Register Bit 0
+                                 .equ	TWD1	= 1	; TWI Data Register Bit 1
+                                 .equ	TWD2	= 2	; TWI Data Register Bit 2
+                                 .equ	TWD3	= 3	; TWI Data Register Bit 3
+                                 .equ	TWD4	= 4	; TWI Data Register Bit 4
+                                 .equ	TWD5	= 5	; TWI Data Register Bit 5
+                                 .equ	TWD6	= 6	; TWI Data Register Bit 6
+                                 .equ	TWD7	= 7	; TWI Data Register Bit 7
+                                 
+                                 ; TWAR - TWI (Slave) Address register
+                                 .equ	TWGCE	= 0	; TWI General Call Recognition Enable Bit
+                                 .equ	TWA0	= 1	; TWI (Slave) Address register Bit 0
+                                 .equ	TWA1	= 2	; TWI (Slave) Address register Bit 1
+                                 .equ	TWA2	= 3	; TWI (Slave) Address register Bit 2
+                                 .equ	TWA3	= 4	; TWI (Slave) Address register Bit 3
+                                 .equ	TWA4	= 5	; TWI (Slave) Address register Bit 4
+                                 .equ	TWA5	= 6	; TWI (Slave) Address register Bit 5
+                                 .equ	TWA6	= 7	; TWI (Slave) Address register Bit 6
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_1 **************
+                                 ; TIMSK1 - Timer/Counter Interrupt Mask Register
+                                 .equ	TOIE1	= 0	; Timer/Counter1 Overflow Interrupt Enable
+                                 .equ	OCIE1A	= 1	; Timer/Counter1 Output CompareA Match Interrupt Enable
+                                 .equ	OCIE1B	= 2	; Timer/Counter1 Output CompareB Match Interrupt Enable
+                                 .equ	ICIE1	= 5	; Timer/Counter1 Input Capture Interrupt Enable
+                                 
+                                 ; TIFR1 - Timer/Counter Interrupt Flag register
+                                 .equ	TOV1	= 0	; Timer/Counter1 Overflow Flag
+                                 .equ	OCF1A	= 1	; Output Compare Flag 1A
+                                 .equ	OCF1B	= 2	; Output Compare Flag 1B
+                                 .equ	ICF1	= 5	; Input Capture Flag 1
+                                 
+                                 ; TCCR1A - Timer/Counter1 Control Register A
+                                 .equ	WGM10	= 0	; Waveform Generation Mode
+                                 .equ	WGM11	= 1	; Waveform Generation Mode
+                                 .equ	COM1B0	= 4	; Compare Output Mode 1B, bit 0
+                                 .equ	COM1B1	= 5	; Compare Output Mode 1B, bit 1
+                                 .equ	COM1A0	= 6	; Comparet Ouput Mode 1A, bit 0
+                                 .equ	COM1A1	= 7	; Compare Output Mode 1A, bit 1
+                                 
+                                 ; TCCR1B - Timer/Counter1 Control Register B
+                                 .equ	CS10	= 0	; Prescaler source of Timer/Counter 1
+                                 .equ	CS11	= 1	; Prescaler source of Timer/Counter 1
+                                 .equ	CS12	= 2	; Prescaler source of Timer/Counter 1
+                                 .equ	WGM12	= 3	; Waveform Generation Mode
+                                 .equ	WGM13	= 4	; Waveform Generation Mode
+                                 .equ	ICES1	= 6	; Input Capture 1 Edge Select
+                                 .equ	ICNC1	= 7	; Input Capture 1 Noise Canceler
+                                 
+                                 ; TCCR1C - Timer/Counter1 Control Register C
+                                 .equ	FOC1B	= 6	; 
+                                 .equ	FOC1A	= 7	; 
+                                 
+                                 ; GTCCR - General Timer/Counter Control Register
+                                 .equ	PSRSYNC	= 0	; Prescaler Reset Timer/Counter1 and Timer/Counter0
+                                 .equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_2 **************
+                                 ; TIMSK2 - Timer/Counter Interrupt Mask register
+                                 .equ	TOIE2	= 0	; Timer/Counter2 Overflow Interrupt Enable
+                                 .equ	TOIE2A	= TOIE2	; For compatibility
+                                 .equ	OCIE2A	= 1	; Timer/Counter2 Output Compare Match A Interrupt Enable
+                                 .equ	OCIE2B	= 2	; Timer/Counter2 Output Compare Match B Interrupt Enable
+                                 
+                                 ; TIFR2 - Timer/Counter Interrupt Flag Register
+                                 .equ	TOV2	= 0	; Timer/Counter2 Overflow Flag
+                                 .equ	OCF2A	= 1	; Output Compare Flag 2A
+                                 .equ	OCF2B	= 2	; Output Compare Flag 2B
+                                 
+                                 ; TCCR2A - Timer/Counter2 Control Register A
+                                 .equ	WGM20	= 0	; Waveform Genration Mode
+                                 .equ	WGM21	= 1	; Waveform Genration Mode
+                                 .equ	COM2B0	= 4	; Compare Output Mode bit 0
+                                 .equ	COM2B1	= 5	; Compare Output Mode bit 1
+                                 .equ	COM2A0	= 6	; Compare Output Mode bit 1
+                                 .equ	COM2A1	= 7	; Compare Output Mode bit 1
+                                 
+                                 ; TCCR2B - Timer/Counter2 Control Register B
+                                 .equ	CS20	= 0	; Clock Select bit 0
+                                 .equ	CS21	= 1	; Clock Select bit 1
+                                 .equ	CS22	= 2	; Clock Select bit 2
+                                 .equ	WGM22	= 3	; Waveform Generation Mode
+                                 .equ	FOC2B	= 6	; Force Output Compare B
+                                 .equ	FOC2A	= 7	; Force Output Compare A
+                                 
+                                 ; TCNT2 - Timer/Counter2
+                                 .equ	TCNT2_0	= 0	; Timer/Counter 2 bit 0
+                                 .equ	TCNT2_1	= 1	; Timer/Counter 2 bit 1
+                                 .equ	TCNT2_2	= 2	; Timer/Counter 2 bit 2
+                                 .equ	TCNT2_3	= 3	; Timer/Counter 2 bit 3
+                                 .equ	TCNT2_4	= 4	; Timer/Counter 2 bit 4
+                                 .equ	TCNT2_5	= 5	; Timer/Counter 2 bit 5
+                                 .equ	TCNT2_6	= 6	; Timer/Counter 2 bit 6
+                                 .equ	TCNT2_7	= 7	; Timer/Counter 2 bit 7
+                                 
+                                 ; OCR2A - Timer/Counter2 Output Compare Register A
+                                 .equ	OCR2A_0	= 0	; Timer/Counter2 Output Compare Register Bit 0
+                                 .equ	OCR2A_1	= 1	; Timer/Counter2 Output Compare Register Bit 1
+                                 .equ	OCR2A_2	= 2	; Timer/Counter2 Output Compare Register Bit 2
+                                 .equ	OCR2A_3	= 3	; Timer/Counter2 Output Compare Register Bit 3
+                                 .equ	OCR2A_4	= 4	; Timer/Counter2 Output Compare Register Bit 4
+                                 .equ	OCR2A_5	= 5	; Timer/Counter2 Output Compare Register Bit 5
+                                 .equ	OCR2A_6	= 6	; Timer/Counter2 Output Compare Register Bit 6
+                                 .equ	OCR2A_7	= 7	; Timer/Counter2 Output Compare Register Bit 7
+                                 
+                                 ; OCR2B - Timer/Counter2 Output Compare Register B
+                                 .equ	OCR2B_0	= 0	; Timer/Counter2 Output Compare Register Bit 0
+                                 .equ	OCR2B_1	= 1	; Timer/Counter2 Output Compare Register Bit 1
+                                 .equ	OCR2B_2	= 2	; Timer/Counter2 Output Compare Register Bit 2
+                                 .equ	OCR2B_3	= 3	; Timer/Counter2 Output Compare Register Bit 3
+                                 .equ	OCR2B_4	= 4	; Timer/Counter2 Output Compare Register Bit 4
+                                 .equ	OCR2B_5	= 5	; Timer/Counter2 Output Compare Register Bit 5
+                                 .equ	OCR2B_6	= 6	; Timer/Counter2 Output Compare Register Bit 6
+                                 .equ	OCR2B_7	= 7	; Timer/Counter2 Output Compare Register Bit 7
+                                 
+                                 ; ASSR - Asynchronous Status Register
+                                 .equ	TCR2BUB	= 0	; Timer/Counter Control Register2 Update Busy
+                                 .equ	TCR2AUB	= 1	; Timer/Counter Control Register2 Update Busy
+                                 .equ	OCR2BUB	= 2	; Output Compare Register 2 Update Busy
+                                 .equ	OCR2AUB	= 3	; Output Compare Register2 Update Busy
+                                 .equ	TCN2UB	= 4	; Timer/Counter2 Update Busy
+                                 .equ	AS2	= 5	; Asynchronous Timer/Counter2
+                                 .equ	EXCLK	= 6	; Enable External Clock Input
+                                 
+                                 ; GTCCR - General Timer Counter Control register
+                                 .equ	PSRASY	= 1	; Prescaler Reset Timer/Counter2
+                                 .equ	PSR2	= PSRASY	; For compatibility
+                                 ;.equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** AD_CONVERTER *****************
+                                 ; ADMUX - The ADC multiplexer Selection Register
+                                 .equ	MUX0	= 0	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX1	= 1	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX2	= 2	; Analog Channel and Gain Selection Bits
+                                 .equ	MUX3	= 3	; Analog Channel and Gain Selection Bits
+                                 .equ	ADLAR	= 5	; Left Adjust Result
+                                 .equ	REFS0	= 6	; Reference Selection Bit 0
+                                 .equ	REFS1	= 7	; Reference Selection Bit 1
+                                 
+                                 ; ADCSRA - The ADC Control and Status register A
+                                 .equ	ADPS0	= 0	; ADC  Prescaler Select Bits
+                                 .equ	ADPS1	= 1	; ADC  Prescaler Select Bits
+                                 .equ	ADPS2	= 2	; ADC  Prescaler Select Bits
+                                 .equ	ADIE	= 3	; ADC Interrupt Enable
+                                 .equ	ADIF	= 4	; ADC Interrupt Flag
+                                 .equ	ADATE	= 5	; ADC  Auto Trigger Enable
+                                 .equ	ADSC	= 6	; ADC Start Conversion
+                                 .equ	ADEN	= 7	; ADC Enable
+                                 
+                                 ; ADCSRB - The ADC Control and Status register B
+                                 .equ	ADTS0	= 0	; ADC Auto Trigger Source bit 0
+                                 .equ	ADTS1	= 1	; ADC Auto Trigger Source bit 1
+                                 .equ	ADTS2	= 2	; ADC Auto Trigger Source bit 2
+                                 .equ	ACME	= 6	; 
+                                 
+                                 ; ADCH - ADC Data Register High Byte
+                                 .equ	ADCH0	= 0	; ADC Data Register High Byte Bit 0
+                                 .equ	ADCH1	= 1	; ADC Data Register High Byte Bit 1
+                                 .equ	ADCH2	= 2	; ADC Data Register High Byte Bit 2
+                                 .equ	ADCH3	= 3	; ADC Data Register High Byte Bit 3
+                                 .equ	ADCH4	= 4	; ADC Data Register High Byte Bit 4
+                                 .equ	ADCH5	= 5	; ADC Data Register High Byte Bit 5
+                                 .equ	ADCH6	= 6	; ADC Data Register High Byte Bit 6
+                                 .equ	ADCH7	= 7	; ADC Data Register High Byte Bit 7
+                                 
+                                 ; ADCL - ADC Data Register Low Byte
+                                 .equ	ADCL0	= 0	; ADC Data Register Low Byte Bit 0
+                                 .equ	ADCL1	= 1	; ADC Data Register Low Byte Bit 1
+                                 .equ	ADCL2	= 2	; ADC Data Register Low Byte Bit 2
+                                 .equ	ADCL3	= 3	; ADC Data Register Low Byte Bit 3
+                                 .equ	ADCL4	= 4	; ADC Data Register Low Byte Bit 4
+                                 .equ	ADCL5	= 5	; ADC Data Register Low Byte Bit 5
+                                 .equ	ADCL6	= 6	; ADC Data Register Low Byte Bit 6
+                                 .equ	ADCL7	= 7	; ADC Data Register Low Byte Bit 7
+                                 
+                                 ; DIDR0 - Digital Input Disable Register
+                                 .equ	ADC0D	= 0	; 
+                                 .equ	ADC1D	= 1	; 
+                                 .equ	ADC2D	= 2	; 
+                                 .equ	ADC3D	= 3	; 
+                                 .equ	ADC4D	= 4	; 
+                                 .equ	ADC5D	= 5	; 
+                                 
+                                 
+                                 ; ***** ANALOG_COMPARATOR ************
+                                 ; ACSR - Analog Comparator Control And Status Register
+                                 .equ	ACIS0	= 0	; Analog Comparator Interrupt Mode Select bit 0
+                                 .equ	ACIS1	= 1	; Analog Comparator Interrupt Mode Select bit 1
+                                 .equ	ACIC	= 2	; Analog Comparator Input Capture Enable
+                                 .equ	ACIE	= 3	; Analog Comparator Interrupt Enable
+                                 .equ	ACI	= 4	; Analog Comparator Interrupt Flag
+                                 .equ	ACO	= 5	; Analog Compare Output
+                                 .equ	ACBG	= 6	; Analog Comparator Bandgap Select
+                                 .equ	ACD	= 7	; Analog Comparator Disable
+                                 
+                                 ; DIDR1 - Digital Input Disable Register 1
+                                 .equ	AIN0D	= 0	; AIN0 Digital Input Disable
+                                 .equ	AIN1D	= 1	; AIN1 Digital Input Disable
+                                 
+                                 
+                                 ; ***** PORTB ************************
+                                 ; PORTB - Port B Data Register
+                                 .equ	PORTB0	= 0	; Port B Data Register bit 0
+                                 .equ	PB0	= 0	; For compatibility
+                                 .equ	PORTB1	= 1	; Port B Data Register bit 1
+                                 .equ	PB1	= 1	; For compatibility
+                                 .equ	PORTB2	= 2	; Port B Data Register bit 2
+                                 .equ	PB2	= 2	; For compatibility
+                                 .equ	PORTB3	= 3	; Port B Data Register bit 3
+                                 .equ	PB3	= 3	; For compatibility
+                                 .equ	PORTB4	= 4	; Port B Data Register bit 4
+                                 .equ	PB4	= 4	; For compatibility
+                                 .equ	PORTB5	= 5	; Port B Data Register bit 5
+                                 .equ	PB5	= 5	; For compatibility
+                                 .equ	PORTB6	= 6	; Port B Data Register bit 6
+                                 .equ	PB6	= 6	; For compatibility
+                                 .equ	PORTB7	= 7	; Port B Data Register bit 7
+                                 .equ	PB7	= 7	; For compatibility
+                                 
+                                 ; DDRB - Port B Data Direction Register
+                                 .equ	DDB0	= 0	; Port B Data Direction Register bit 0
+                                 .equ	DDB1	= 1	; Port B Data Direction Register bit 1
+                                 .equ	DDB2	= 2	; Port B Data Direction Register bit 2
+                                 .equ	DDB3	= 3	; Port B Data Direction Register bit 3
+                                 .equ	DDB4	= 4	; Port B Data Direction Register bit 4
+                                 .equ	DDB5	= 5	; Port B Data Direction Register bit 5
+                                 .equ	DDB6	= 6	; Port B Data Direction Register bit 6
+                                 .equ	DDB7	= 7	; Port B Data Direction Register bit 7
+                                 
+                                 ; PINB - Port B Input Pins
+                                 .equ	PINB0	= 0	; Port B Input Pins bit 0
+                                 .equ	PINB1	= 1	; Port B Input Pins bit 1
+                                 .equ	PINB2	= 2	; Port B Input Pins bit 2
+                                 .equ	PINB3	= 3	; Port B Input Pins bit 3
+                                 .equ	PINB4	= 4	; Port B Input Pins bit 4
+                                 .equ	PINB5	= 5	; Port B Input Pins bit 5
+                                 .equ	PINB6	= 6	; Port B Input Pins bit 6
+                                 .equ	PINB7	= 7	; Port B Input Pins bit 7
+                                 
+                                 
+                                 ; ***** PORTC ************************
+                                 ; PORTC - Port C Data Register
+                                 .equ	PORTC0	= 0	; Port C Data Register bit 0
+                                 .equ	PC0	= 0	; For compatibility
+                                 .equ	PORTC1	= 1	; Port C Data Register bit 1
+                                 .equ	PC1	= 1	; For compatibility
+                                 .equ	PORTC2	= 2	; Port C Data Register bit 2
+                                 .equ	PC2	= 2	; For compatibility
+                                 .equ	PORTC3	= 3	; Port C Data Register bit 3
+                                 .equ	PC3	= 3	; For compatibility
+                                 .equ	PORTC4	= 4	; Port C Data Register bit 4
+                                 .equ	PC4	= 4	; For compatibility
+                                 .equ	PORTC5	= 5	; Port C Data Register bit 5
+                                 .equ	PC5	= 5	; For compatibility
+                                 .equ	PORTC6	= 6	; Port C Data Register bit 6
+                                 .equ	PC6	= 6	; For compatibility
+                                 
+                                 ; DDRC - Port C Data Direction Register
+                                 .equ	DDC0	= 0	; Port C Data Direction Register bit 0
+                                 .equ	DDC1	= 1	; Port C Data Direction Register bit 1
+                                 .equ	DDC2	= 2	; Port C Data Direction Register bit 2
+                                 .equ	DDC3	= 3	; Port C Data Direction Register bit 3
+                                 .equ	DDC4	= 4	; Port C Data Direction Register bit 4
+                                 .equ	DDC5	= 5	; Port C Data Direction Register bit 5
+                                 .equ	DDC6	= 6	; Port C Data Direction Register bit 6
+                                 
+                                 ; PINC - Port C Input Pins
+                                 .equ	PINC0	= 0	; Port C Input Pins bit 0
+                                 .equ	PINC1	= 1	; Port C Input Pins bit 1
+                                 .equ	PINC2	= 2	; Port C Input Pins bit 2
+                                 .equ	PINC3	= 3	; Port C Input Pins bit 3
+                                 .equ	PINC4	= 4	; Port C Input Pins bit 4
+                                 .equ	PINC5	= 5	; Port C Input Pins bit 5
+                                 .equ	PINC6	= 6	; Port C Input Pins bit 6
+                                 
+                                 
+                                 ; ***** PORTD ************************
+                                 ; PORTD - Port D Data Register
+                                 .equ	PORTD0	= 0	; Port D Data Register bit 0
+                                 .equ	PD0	= 0	; For compatibility
+                                 .equ	PORTD1	= 1	; Port D Data Register bit 1
+                                 .equ	PD1	= 1	; For compatibility
+                                 .equ	PORTD2	= 2	; Port D Data Register bit 2
+                                 .equ	PD2	= 2	; For compatibility
+                                 .equ	PORTD3	= 3	; Port D Data Register bit 3
+                                 .equ	PD3	= 3	; For compatibility
+                                 .equ	PORTD4	= 4	; Port D Data Register bit 4
+                                 .equ	PD4	= 4	; For compatibility
+                                 .equ	PORTD5	= 5	; Port D Data Register bit 5
+                                 .equ	PD5	= 5	; For compatibility
+                                 .equ	PORTD6	= 6	; Port D Data Register bit 6
+                                 .equ	PD6	= 6	; For compatibility
+                                 .equ	PORTD7	= 7	; Port D Data Register bit 7
+                                 .equ	PD7	= 7	; For compatibility
+                                 
+                                 ; DDRD - Port D Data Direction Register
+                                 .equ	DDD0	= 0	; Port D Data Direction Register bit 0
+                                 .equ	DDD1	= 1	; Port D Data Direction Register bit 1
+                                 .equ	DDD2	= 2	; Port D Data Direction Register bit 2
+                                 .equ	DDD3	= 3	; Port D Data Direction Register bit 3
+                                 .equ	DDD4	= 4	; Port D Data Direction Register bit 4
+                                 .equ	DDD5	= 5	; Port D Data Direction Register bit 5
+                                 .equ	DDD6	= 6	; Port D Data Direction Register bit 6
+                                 .equ	DDD7	= 7	; Port D Data Direction Register bit 7
+                                 
+                                 ; PIND - Port D Input Pins
+                                 .equ	PIND0	= 0	; Port D Input Pins bit 0
+                                 .equ	PIND1	= 1	; Port D Input Pins bit 1
+                                 .equ	PIND2	= 2	; Port D Input Pins bit 2
+                                 .equ	PIND3	= 3	; Port D Input Pins bit 3
+                                 .equ	PIND4	= 4	; Port D Input Pins bit 4
+                                 .equ	PIND5	= 5	; Port D Input Pins bit 5
+                                 .equ	PIND6	= 6	; Port D Input Pins bit 6
+                                 .equ	PIND7	= 7	; Port D Input Pins bit 7
+                                 
+                                 
+                                 ; ***** TIMER_COUNTER_0 **************
+                                 ; TIMSK0 - Timer/Counter0 Interrupt Mask Register
+                                 .equ	TOIE0	= 0	; Timer/Counter0 Overflow Interrupt Enable
+                                 .equ	OCIE0A	= 1	; Timer/Counter0 Output Compare Match A Interrupt Enable
+                                 .equ	OCIE0B	= 2	; Timer/Counter0 Output Compare Match B Interrupt Enable
+                                 
+                                 ; TIFR0 - Timer/Counter0 Interrupt Flag register
+                                 .equ	TOV0	= 0	; Timer/Counter0 Overflow Flag
+                                 .equ	OCF0A	= 1	; Timer/Counter0 Output Compare Flag 0A
+                                 .equ	OCF0B	= 2	; Timer/Counter0 Output Compare Flag 0B
+                                 
+                                 ; TCCR0A - Timer/Counter  Control Register A
+                                 .equ	WGM00	= 0	; Waveform Generation Mode
+                                 .equ	WGM01	= 1	; Waveform Generation Mode
+                                 .equ	COM0B0	= 4	; Compare Output Mode, Fast PWm
+                                 .equ	COM0B1	= 5	; Compare Output Mode, Fast PWm
+                                 .equ	COM0A0	= 6	; Compare Output Mode, Phase Correct PWM Mode
+                                 .equ	COM0A1	= 7	; Compare Output Mode, Phase Correct PWM Mode
+                                 
+                                 ; TCCR0B - Timer/Counter Control Register B
+                                 .equ	CS00	= 0	; Clock Select
+                                 .equ	CS01	= 1	; Clock Select
+                                 .equ	CS02	= 2	; Clock Select
+                                 .equ	WGM02	= 3	; 
+                                 .equ	FOC0B	= 6	; Force Output Compare B
+                                 .equ	FOC0A	= 7	; Force Output Compare A
+                                 
+                                 ; TCNT0 - Timer/Counter0
+                                 .equ	TCNT0_0	= 0	; 
+                                 .equ	TCNT0_1	= 1	; 
+                                 .equ	TCNT0_2	= 2	; 
+                                 .equ	TCNT0_3	= 3	; 
+                                 .equ	TCNT0_4	= 4	; 
+                                 .equ	TCNT0_5	= 5	; 
+                                 .equ	TCNT0_6	= 6	; 
+                                 .equ	TCNT0_7	= 7	; 
+                                 
+                                 ; OCR0A - Timer/Counter0 Output Compare Register
+                                 .equ	OCR0A_0	= 0	; 
+                                 .equ	OCR0A_1	= 1	; 
+                                 .equ	OCR0A_2	= 2	; 
+                                 .equ	OCR0A_3	= 3	; 
+                                 .equ	OCR0A_4	= 4	; 
+                                 .equ	OCR0A_5	= 5	; 
+                                 .equ	OCR0A_6	= 6	; 
+                                 .equ	OCR0A_7	= 7	; 
+                                 
+                                 ; OCR0B - Timer/Counter0 Output Compare Register
+                                 .equ	OCR0B_0	= 0	; 
+                                 .equ	OCR0B_1	= 1	; 
+                                 .equ	OCR0B_2	= 2	; 
+                                 .equ	OCR0B_3	= 3	; 
+                                 .equ	OCR0B_4	= 4	; 
+                                 .equ	OCR0B_5	= 5	; 
+                                 .equ	OCR0B_6	= 6	; 
+                                 .equ	OCR0B_7	= 7	; 
+                                 
+                                 ; GTCCR - General Timer/Counter Control Register
+                                 ;.equ	PSRSYNC	= 0	; Prescaler Reset Timer/Counter1 and Timer/Counter0
+                                 .equ	PSR10	= PSRSYNC	; For compatibility
+                                 ;.equ	TSM	= 7	; Timer/Counter Synchronization Mode
+                                 
+                                 
+                                 ; ***** EXTERNAL_INTERRUPT ***********
+                                 ; EICRA - External Interrupt Control Register
+                                 .equ	ISC00	= 0	; External Interrupt Sense Control 0 Bit 0
+                                 .equ	ISC01	= 1	; External Interrupt Sense Control 0 Bit 1
+                                 .equ	ISC10	= 2	; External Interrupt Sense Control 1 Bit 0
+                                 .equ	ISC11	= 3	; External Interrupt Sense Control 1 Bit 1
+                                 
+                                 ; EIMSK - External Interrupt Mask Register
+                                 .equ	INT0	= 0	; External Interrupt Request 0 Enable
+                                 .equ	INT1	= 1	; External Interrupt Request 1 Enable
+                                 
+                                 ; EIFR - External Interrupt Flag Register
+                                 .equ	INTF0	= 0	; External Interrupt Flag 0
+                                 .equ	INTF1	= 1	; External Interrupt Flag 1
+                                 
+                                 ; PCICR - Pin Change Interrupt Control Register
+                                 .equ	PCIE0	= 0	; Pin Change Interrupt Enable 0
+                                 .equ	PCIE1	= 1	; Pin Change Interrupt Enable 1
+                                 .equ	PCIE2	= 2	; Pin Change Interrupt Enable 2
+                                 
+                                 ; PCMSK2 - Pin Change Mask Register 2
+                                 .equ	PCINT16	= 0	; Pin Change Enable Mask 16
+                                 .equ	PCINT17	= 1	; Pin Change Enable Mask 17
+                                 .equ	PCINT18	= 2	; Pin Change Enable Mask 18
+                                 .equ	PCINT19	= 3	; Pin Change Enable Mask 19
+                                 .equ	PCINT20	= 4	; Pin Change Enable Mask 20
+                                 .equ	PCINT21	= 5	; Pin Change Enable Mask 21
+                                 .equ	PCINT22	= 6	; Pin Change Enable Mask 22
+                                 .equ	PCINT23	= 7	; Pin Change Enable Mask 23
+                                 
+                                 ; PCMSK1 - Pin Change Mask Register 1
+                                 .equ	PCINT8	= 0	; Pin Change Enable Mask 8
+                                 .equ	PCINT9	= 1	; Pin Change Enable Mask 9
+                                 .equ	PCINT10	= 2	; Pin Change Enable Mask 10
+                                 .equ	PCINT11	= 3	; Pin Change Enable Mask 11
+                                 .equ	PCINT12	= 4	; Pin Change Enable Mask 12
+                                 .equ	PCINT13	= 5	; Pin Change Enable Mask 13
+                                 .equ	PCINT14	= 6	; Pin Change Enable Mask 14
+                                 
+                                 ; PCMSK0 - Pin Change Mask Register 0
+                                 .equ	PCINT0	= 0	; Pin Change Enable Mask 0
+                                 .equ	PCINT1	= 1	; Pin Change Enable Mask 1
+                                 .equ	PCINT2	= 2	; Pin Change Enable Mask 2
+                                 .equ	PCINT3	= 3	; Pin Change Enable Mask 3
+                                 .equ	PCINT4	= 4	; Pin Change Enable Mask 4
+                                 .equ	PCINT5	= 5	; Pin Change Enable Mask 5
+                                 .equ	PCINT6	= 6	; Pin Change Enable Mask 6
+                                 .equ	PCINT7	= 7	; Pin Change Enable Mask 7
+                                 
+                                 ; PCIFR - Pin Change Interrupt Flag Register
+                                 .equ	PCIF0	= 0	; Pin Change Interrupt Flag 0
+                                 .equ	PCIF1	= 1	; Pin Change Interrupt Flag 1
+                                 .equ	PCIF2	= 2	; Pin Change Interrupt Flag 2
+                                 
+                                 
+                                 ; ***** SPI **************************
+                                 ; SPDR - SPI Data Register
+                                 .equ	SPDR0	= 0	; SPI Data Register bit 0
+                                 .equ	SPDR1	= 1	; SPI Data Register bit 1
+                                 .equ	SPDR2	= 2	; SPI Data Register bit 2
+                                 .equ	SPDR3	= 3	; SPI Data Register bit 3
+                                 .equ	SPDR4	= 4	; SPI Data Register bit 4
+                                 .equ	SPDR5	= 5	; SPI Data Register bit 5
+                                 .equ	SPDR6	= 6	; SPI Data Register bit 6
+                                 .equ	SPDR7	= 7	; SPI Data Register bit 7
+                                 
+                                 ; SPSR - SPI Status Register
+                                 .equ	SPI2X	= 0	; Double SPI Speed Bit
+                                 .equ	WCOL	= 6	; Write Collision Flag
+                                 .equ	SPIF	= 7	; SPI Interrupt Flag
+                                 
+                                 ; SPCR - SPI Control Register
+                                 .equ	SPR0	= 0	; SPI Clock Rate Select 0
+                                 .equ	SPR1	= 1	; SPI Clock Rate Select 1
+                                 .equ	CPHA	= 2	; Clock Phase
+                                 .equ	CPOL	= 3	; Clock polarity
+                                 .equ	MSTR	= 4	; Master/Slave Select
+                                 .equ	DORD	= 5	; Data Order
+                                 .equ	SPE	= 6	; SPI Enable
+                                 .equ	SPIE	= 7	; SPI Interrupt Enable
+                                 
+                                 
+                                 ; ***** WATCHDOG *********************
+                                 ; WDTCSR - Watchdog Timer Control Register
+                                 .equ	WDP0	= 0	; Watch Dog Timer Prescaler bit 0
+                                 .equ	WDP1	= 1	; Watch Dog Timer Prescaler bit 1
+                                 .equ	WDP2	= 2	; Watch Dog Timer Prescaler bit 2
+                                 .equ	WDE	= 3	; Watch Dog Enable
+                                 .equ	WDCE	= 4	; Watchdog Change Enable
+                                 .equ	WDP3	= 5	; Watchdog Timer Prescaler Bit 3
+                                 .equ	WDIE	= 6	; Watchdog Timeout Interrupt Enable
+                                 .equ	WDIF	= 7	; Watchdog Timeout Interrupt Flag
+                                 
+                                 
+                                 ; ***** CPU **************************
+                                 ; SREG - Status Register
+                                 .equ	SREG_C	= 0	; Carry Flag
+                                 .equ	SREG_Z	= 1	; Zero Flag
+                                 .equ	SREG_N	= 2	; Negative Flag
+                                 .equ	SREG_V	= 3	; Two's Complement Overflow Flag
+                                 .equ	SREG_S	= 4	; Sign Bit
+                                 .equ	SREG_H	= 5	; Half Carry Flag
+                                 .equ	SREG_T	= 6	; Bit Copy Storage
+                                 .equ	SREG_I	= 7	; Global Interrupt Enable
+                                 
+                                 ; OSCCAL - Oscillator Calibration Value
+                                 .equ	CAL0	= 0	; Oscillator Calibration Value Bit0
+                                 .equ	CAL1	= 1	; Oscillator Calibration Value Bit1
+                                 .equ	CAL2	= 2	; Oscillator Calibration Value Bit2
+                                 .equ	CAL3	= 3	; Oscillator Calibration Value Bit3
+                                 .equ	CAL4	= 4	; Oscillator Calibration Value Bit4
+                                 .equ	CAL5	= 5	; Oscillator Calibration Value Bit5
+                                 .equ	CAL6	= 6	; Oscillator Calibration Value Bit6
+                                 .equ	CAL7	= 7	; Oscillator Calibration Value Bit7
+                                 
+                                 ; CLKPR - Clock Prescale Register
+                                 .equ	CLKPS0	= 0	; Clock Prescaler Select Bit 0
+                                 .equ	CLKPS1	= 1	; Clock Prescaler Select Bit 1
+                                 .equ	CLKPS2	= 2	; Clock Prescaler Select Bit 2
+                                 .equ	CLKPS3	= 3	; Clock Prescaler Select Bit 3
+                                 .equ	CLKPCE	= 7	; Clock Prescaler Change Enable
+                                 
+                                 ; SPMCSR - Store Program Memory Control and Status Register
+                                 .equ    SELFPRGEN = 0; Added for backwards compatibility
+                                 .equ	SPMEN	= 0	; Store Program Memory
+                                 .equ	PGERS	= 1	; Page Erase
+                                 .equ	PGWRT	= 2	; Page Write
+                                 .equ	BLBSET	= 3	; Boot Lock Bit Set
+                                 .equ	RWWSRE	= 4	; Read-While-Write section read enable
+                                 .equ    SIGRD   = 5 ; Signature Row Read
+                                 .equ	RWWSB	= 6	; Read-While-Write Section Busy
+                                 .equ	SPMIE	= 7	; SPM Interrupt Enable
+                                 
+                                 ; MCUCR - MCU Control Register
+                                 .equ	IVCE	= 0	; 
+                                 .equ	IVSEL	= 1	; 
+                                 .equ	PUD	= 4	; 
+                                 .equ	BODSE	= 5	; BOD Sleep Enable
+                                 .equ	BODS	= 6	; BOD Sleep
+                                 
+                                 ; MCUSR - MCU Status Register
+                                 .equ	PORF	= 0	; Power-on reset flag
+                                 .equ	EXTRF	= 1	; External Reset Flag
+                                 .equ	EXTREF	= EXTRF	; For compatibility
+                                 .equ	BORF	= 2	; Brown-out Reset Flag
+                                 .equ	WDRF	= 3	; Watchdog Reset Flag
+                                 
+                                 ; SMCR - Sleep Mode Control Register
+                                 .equ	SE	= 0	; Sleep Enable
+                                 .equ	SM0	= 1	; Sleep Mode Select Bit 0
+                                 .equ	SM1	= 2	; Sleep Mode Select Bit 1
+                                 .equ	SM2	= 3	; Sleep Mode Select Bit 2
+                                 
+                                 ; GPIOR2 - General Purpose I/O Register 2
+                                 .equ	GPIOR20	= 0	; 
+                                 .equ	GPIOR21	= 1	; 
+                                 .equ	GPIOR22	= 2	; 
+                                 .equ	GPIOR23	= 3	; 
+                                 .equ	GPIOR24	= 4	; 
+                                 .equ	GPIOR25	= 5	; 
+                                 .equ	GPIOR26	= 6	; 
+                                 .equ	GPIOR27	= 7	; 
+                                 
+                                 ; GPIOR1 - General Purpose I/O Register 1
+                                 .equ	GPIOR10	= 0	; 
+                                 .equ	GPIOR11	= 1	; 
+                                 .equ	GPIOR12	= 2	; 
+                                 .equ	GPIOR13	= 3	; 
+                                 .equ	GPIOR14	= 4	; 
+                                 .equ	GPIOR15	= 5	; 
+                                 .equ	GPIOR16	= 6	; 
+                                 .equ	GPIOR17	= 7	; 
+                                 
+                                 ; GPIOR0 - General Purpose I/O Register 0
+                                 .equ	GPIOR00	= 0	; 
+                                 .equ	GPIOR01	= 1	; 
+                                 .equ	GPIOR02	= 2	; 
+                                 .equ	GPIOR03	= 3	; 
+                                 .equ	GPIOR04	= 4	; 
+                                 .equ	GPIOR05	= 5	; 
+                                 .equ	GPIOR06	= 6	; 
+                                 .equ	GPIOR07	= 7	; 
+                                 
+                                 ; PRR - Power Reduction Register
+                                 .equ	PRADC	= 0	; Power Reduction ADC
+                                 .equ	PRUSART0	= 1	; Power Reduction USART
+                                 .equ	PRSPI	= 2	; Power Reduction Serial Peripheral Interface
+                                 .equ	PRTIM1	= 3	; Power Reduction Timer/Counter1
+                                 .equ	PRTIM0	= 5	; Power Reduction Timer/Counter0
+                                 .equ	PRTIM2	= 6	; Power Reduction Timer/Counter2
+                                 .equ	PRTWI	= 7	; Power Reduction TWI
+                                 
+                                 
+                                 ; ***** EEPROM ***********************
+                                 ; EEARL - EEPROM Address Register Low Byte
+                                 .equ	EEAR0	= 0	; EEPROM Read/Write Access Bit 0
+                                 .equ	EEAR1	= 1	; EEPROM Read/Write Access Bit 1
+                                 .equ	EEAR2	= 2	; EEPROM Read/Write Access Bit 2
+                                 .equ	EEAR3	= 3	; EEPROM Read/Write Access Bit 3
+                                 .equ	EEAR4	= 4	; EEPROM Read/Write Access Bit 4
+                                 .equ	EEAR5	= 5	; EEPROM Read/Write Access Bit 5
+                                 .equ	EEAR6	= 6	; EEPROM Read/Write Access Bit 6
+                                 .equ	EEAR7	= 7	; EEPROM Read/Write Access Bit 7
+                                 
+                                 ; EEARH - EEPROM Address Register High Byte
+                                 .equ	EEAR8	= 0	; EEPROM Read/Write Access Bit 8
+                                 .equ	EEAR9	= 1	; EEPROM Read/Write Access Bit 9
+                                 
+                                 ; EEDR - EEPROM Data Register
+                                 .equ	EEDR0	= 0	; EEPROM Data Register bit 0
+                                 .equ	EEDR1	= 1	; EEPROM Data Register bit 1
+                                 .equ	EEDR2	= 2	; EEPROM Data Register bit 2
+                                 .equ	EEDR3	= 3	; EEPROM Data Register bit 3
+                                 .equ	EEDR4	= 4	; EEPROM Data Register bit 4
+                                 .equ	EEDR5	= 5	; EEPROM Data Register bit 5
+                                 .equ	EEDR6	= 6	; EEPROM Data Register bit 6
+                                 .equ	EEDR7	= 7	; EEPROM Data Register bit 7
+                                 
+                                 ; EECR - EEPROM Control Register
+                                 .equ	EERE	= 0	; EEPROM Read Enable
+                                 .equ	EEPE	= 1	; EEPROM Write Enable
+                                 .equ	EEMPE	= 2	; EEPROM Master Write Enable
+                                 .equ	EERIE	= 3	; EEPROM Ready Interrupt Enable
+                                 .equ	EEPM0	= 4	; EEPROM Programming Mode Bit 0
+                                 .equ	EEPM1	= 5	; EEPROM Programming Mode Bit 1
+                                 
+                                 
+                                 
+                                 ; ***** LOCKSBITS ********************************************************
+                                 .equ	LB1	= 0	; Lock bit
+                                 .equ	LB2	= 1	; Lock bit
+                                 .equ	BLB01	= 2	; Boot Lock bit
+                                 .equ	BLB02	= 3	; Boot Lock bit
+                                 .equ	BLB11	= 4	; Boot lock bit
+                                 .equ	BLB12	= 5	; Boot lock bit
+                                 
+                                 
+                                 ; ***** FUSES ************************************************************
+                                 ; LOW fuse bits
+                                 .equ	CKSEL0	= 0	; Select Clock Source
+                                 .equ	CKSEL1	= 1	; Select Clock Source
+                                 .equ	CKSEL2	= 2	; Select Clock Source
+                                 .equ	CKSEL3	= 3	; Select Clock Source
+                                 .equ	SUT0	= 4	; Select start-up time
+                                 .equ	SUT1	= 5	; Select start-up time
+                                 .equ	CKOUT	= 6	; Clock output
+                                 .equ	CKDIV8	= 7	; Divide clock by 8
+                                 
+                                 ; HIGH fuse bits
+                                 .equ	BOOTRST	= 0	; Select reset vector
+                                 .equ	BOOTSZ0	= 1	; Select boot size
+                                 .equ	BOOTSZ1	= 2	; Select boot size
+                                 .equ	EESAVE	= 3	; EEPROM memory is preserved through chip erase
+                                 .equ	WDTON	= 4	; Watchdog Timer Always On
+                                 .equ	SPIEN	= 5	; Enable Serial programming and Data Downloading
+                                 .equ	DWEN	= 6	; debugWIRE Enable
+                                 .equ	RSTDISBL	= 7	; External reset disable
+                                 
+                                 ; EXTENDED fuse bits
+                                 .equ	BODLEVEL0	= 0	; Brown-out Detector trigger level
+                                 .equ	BODLEVEL1	= 1	; Brown-out Detector trigger level
+                                 .equ	BODLEVEL2	= 2	; Brown-out Detector trigger level
+                                 
+                                 
+                                 
+                                 ; ***** CPU REGISTER DEFINITIONS *****************************************
+                                 .def	XH	= r27
+                                 .def	XL	= r26
+                                 .def	YH	= r29
+                                 .def	YL	= r28
+                                 .def	ZH	= r31
+                                 .def	ZL	= r30
+                                 
+                                 
+                                 
+                                 ; ***** DATA MEMORY DECLARATIONS *****************************************
+                                 .equ	FLASHEND	= 0x3fff	; Note: Word address
+                                 .equ	IOEND	= 0x00ff
+                                 .equ	SRAM_START	= 0x0100
+                                 .equ	SRAM_SIZE	= 2048
+                                 .equ	RAMEND	= 0x08ff
+                                 .equ	XRAMEND	= 0x0000
+                                 .equ	E2END	= 0x03ff
+                                 .equ	EEPROMEND	= 0x03ff
+                                 .equ	EEADRBITS	= 10
+                                 #pragma AVRPART MEMORY PROG_FLASH 32768
+                                 #pragma AVRPART MEMORY EEPROM 1024
+                                 #pragma AVRPART MEMORY INT_SRAM SIZE 2048
+                                 #pragma AVRPART MEMORY INT_SRAM START_ADDR 0x100
+                                 
+                                 
+                                 
+                                 ; ***** BOOTLOADER DECLARATIONS ******************************************
+                                 .equ	NRWW_START_ADDR	= 0x3800
+                                 .equ	NRWW_STOP_ADDR	= 0x3fff
+                                 .equ	RWW_START_ADDR	= 0x0
+                                 .equ	RWW_STOP_ADDR	= 0x37ff
+                                 .equ	PAGESIZE	= 64
+                                 .equ	FIRSTBOOTSTART	= 0x3f00
+                                 .equ	SECONDBOOTSTART	= 0x3e00
+                                 .equ	THIRDBOOTSTART	= 0x3c00
+                                 .equ	FOURTHBOOTSTART	= 0x3800
+                                 .equ	SMALLBOOTSTART	= FIRSTBOOTSTART
+                                 .equ	LARGEBOOTSTART	= FOURTHBOOTSTART
+                                 
+                                 
+                                 
+                                 ; ***** INTERRUPT VECTORS ************************************************
+                                 .equ	INT0addr	= 0x0002	; External Interrupt Request 0
+                                 .equ	INT1addr	= 0x0004	; External Interrupt Request 1
+                                 .equ	PCI0addr	= 0x0006	; Pin Change Interrupt Request 0
+                                 .equ	PCI1addr	= 0x0008	; Pin Change Interrupt Request 0
+                                 .equ	PCI2addr	= 0x000a	; Pin Change Interrupt Request 1
+                                 .equ	WDTaddr	= 0x000c	; Watchdog Time-out Interrupt
+                                 .equ	OC2Aaddr	= 0x000e	; Timer/Counter2 Compare Match A
+                                 .equ	OC2Baddr	= 0x0010	; Timer/Counter2 Compare Match A
+                                 .equ	OVF2addr	= 0x0012	; Timer/Counter2 Overflow
+                                 .equ	ICP1addr	= 0x0014	; Timer/Counter1 Capture Event
+                                 .equ	OC1Aaddr	= 0x0016	; Timer/Counter1 Compare Match A
+                                 .equ	OC1Baddr	= 0x0018	; Timer/Counter1 Compare Match B
+                                 .equ	OVF1addr	= 0x001a	; Timer/Counter1 Overflow
+                                 .equ	OC0Aaddr	= 0x001c	; TimerCounter0 Compare Match A
+                                 .equ	OC0Baddr	= 0x001e	; TimerCounter0 Compare Match B
+                                 .equ	OVF0addr	= 0x0020	; Timer/Couner0 Overflow
+                                 .equ	SPIaddr	= 0x0022	; SPI Serial Transfer Complete
+                                 .equ	URXCaddr	= 0x0024	; USART Rx Complete
+                                 .equ	UDREaddr	= 0x0026	; USART, Data Register Empty
+                                 .equ	UTXCaddr	= 0x0028	; USART Tx Complete
+                                 .equ	ADCCaddr	= 0x002a	; ADC Conversion Complete
+                                 .equ	ERDYaddr	= 0x002c	; EEPROM Ready
+                                 .equ	ACIaddr	= 0x002e	; Analog Comparator
+                                 .equ	TWIaddr	= 0x0030	; Two-wire Serial Interface
+                                 .equ	SPMRaddr	= 0x0032	; Store Program Memory Read
+                                 
+                                 .equ	INT_VECTORS_SIZE	= 52	; size in words
+                                 
+                                 #endif  /* _M328PDEF_INC_ */
+                                 
+                                 ; ***** END OF FILE ******************************************************
+                                 
+                                 
+                                 ;***** Created: 2011-02-09 12:03 ******* Source: ATmega328P.xml **********
+                                 ;*************************************************************************
+                                 ;* A P P L I C A T I O N   N O T E   F O R   T H E   A V R   F A M I L Y
+                                 ;* 
+                                 ;* Number            : AVR000
+                                 ;* File Name         : "m328Pdef.inc"
+                                 ;* Title             : Register/Bit Definitions for the ATmega328P
+                                 ;* Date              : 2011-02-09
+                                 ;* Version           : 2.35
+                                 ;* Support E-mail    : avr@atmel.com
+                                 ;* Target MCU        : ATmega328P
+                                 ;* 
+                                 ;* DESCRIPTION
+                                 ;* When including this file in the assembly program file, all I/O register 
+                                 ;* names and I/O register bit names appearing in the data book can be used.
+                                 ;* In addition, the six registers forming the three data pointers X, Y and 
+                                 ;* Z have been assigned names XL - ZH. Highest RAM address for Internal 
+                                 ;* SRAM is also defined 
+                                 ;* 
+                                 ;* The Register names are represented by their hexadecimal address.
+                                 ;* 
+                                 ;* The Register Bit names are represented by their bit number (0-7).
+                                 ;* 
+                                 ;* Please observe the difference in using the bit names with instructions
+                                 ;* such as "sbr"/"cbr" (set/clear bit in register) and "sbrs"/"sbrc"
+                                 ;* (skip if bit in register set/cleared). The following example illustrates
+                                 ;* this:
+                                 ;* 
+                                 ;* in    r16,PORTB             ;read PORTB latch
+                                 ;* sbr   r16,(1<<PB6)+(1<<PB5) ;set PB6 and PB5 (use masks, not bit#)
+                                 ;* out   PORTB,r16             ;output to PORTB
+                                 ;* 
+                                 ;* in    r16,TIFR              ;read the Timer Interrupt Flag Register
+                                 ;* sbrc  r16,TOV0              ;test the overflow flag (use bit#)
+                                 ;* rjmp  TOV0_is_set           ;jump if set
+                                 ;* ...                         ;otherwise do something else
+                                 ;*************************************************************************
+                                 
+                                 #ifndef _M328PDEF_INC_
+                                 #endif  /* _M328PDEF_INC_ */
+                                 
+                                 ; ***** END OF FILE ******************************************************
+                                 
+                                 
+                                 
+                                 .CSEG
+                                 
+                                 
+                                 .ORG 	0x00
+000000 c033                      	RJMP	MAIN
+                                 .ORG 	0x02
+000002 c7be                      	RJMP 	EXT_INT0
+                                 .ORG 	0x1E
+00001e c7af                      	RJMP	TIM1_OVF
+                                 ;INTERRUPCIONES
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 .ORG 	INT_VECTORS_SIZE
+                                 MAIN:
+                                 INIC_SP:
+000034 ef0f                      	ldi r16,low(RAMEND)
+000035 bf0d                      	out spl,r16
+000036 e008                      	ldi r16,high(RAMEND)
+000037 bf0e                      	out sph,r16
+                                 	
+                                 
+000038 9a25                      	SBI DDRB,5
+                                 
+000039 d01d                      	RCALL	INIC_ANGULOS	;INICIALIZA VALORES DE ANGULOS DE LOS SERVOS	
+                                 
+00003a d581                      	RCALL	MOVEMENT_SETUP	;SERVOS EN POSICI”N INICIAL
+00003b d73c                      	RCALL	MOVEMENT_DELAY
+                                 
+                                 
+                                 ;	RCALL 	HCSR04_SETUP
+                                 ;	CLR 	R21
+                                 ;	CLR		R22
+                                 	
+                                 
+                                 ;	RCALL STAND_GREET_LEFT ;SALUDA
+                                 ;	RCALL MOVEMENT_DELAY
+                                 
+                                 MAIN_LOOP:
+00003c e026                      	LDI		LEG_L,LOW(LEG_3)
+00003d e035                      	LDI		LEG_H,HIGH(LEG_3)
+                                 
+                                 ;	MOV		R23,LEG_H
+                                 ;	LDI 	R24,LOW(1100)
+                                 ;	LDI 	R25,HIGH(1100)
+                                 ;	RCALL 	PCA9685_MOVE
+                                 
+                                 
+                                 ;	RCALL	ROLL_LEG_TEST
+                                 ;	RCALL	YAW_LEG_TEST
+                                 ;	RCALL TURN_RIGHT
+                                 ;	RCALL MOVEMENT_DELAY
+                                 
+00003e d645                      	RCALL TURN_LEFT
+                                 ;	RCALL MOVEMENT_DELAY
+                                 
+                                 
+                                 
+00003f cffc                      	RJMP 	MAIN_LOOP
+                                 
+                                 TURN_ON:
+000040 9a2d                      	SBI PORTB,5
+000041 9508                      	RET
+                                 
+                                 
+                                 TURN_OFF:
+000042 982d                      	CBI PORTB,5
+000043 9508                      	RET
+                                 
+                                 
+                                 
+                                 ;error
+                                 ERRLOOP:
+000044 cfff                      	RJMP	ERRLOOP
+                                 
+                                 DELAY_10_S:
+000045 939f                      	PUSH	R25
+000046 e392                      	LDI		R25,50
+                                 LOOP_DELAY_1_S:
+000047 d004                      	RCALL	DELAY_100_MS
+000048 959a                      	DEC	R25
+000049 f7e9                      	brne LOOP_DELAY_1_S
+                                 	
+00004a 919f                      	POP		R25
+00004b 9508                      	RET
+                                 
+                                 DELAY_100_MS:	;DELAY DE 100 MILISEGUNDOS PARA UN CLOCK DE 1MZ
+00004c 936f                      	push r22
+00004d 938f                      	push r24
+00004e ec68                      	ldi r22, 200 ;
+                                 LOOP_DELAY_1:
+00004f ea8a                      	ldi R24, 170
+                                 LOOP_DELAY_2:
+000050 958a                      	DEC	R24
+000051 f7f1                      	brne LOOP_DELAY_2
+000052 956a                      	dec r22
+000053 f7d9                      	brne LOOP_DELAY_1
+                                 
+000054 918f                      	pop r24
+000055 916f                      	pop r22
+000056 9508                      	ret
+                                 
+                                 
+                                 .INCLUDE	"DEFINES.INC"
+                                 
+                                 .DEF		COUNTER=R17
+                                 
+                                 .DEF		LEG_L=R18
+                                 .DEF		LEG_H=R19
+                                 
+                                 .DEF		ANG_L=R24
+                                 .DEF		ANG_H=R25
+                                 
+                                 
+                                 
+                                 .DEF 		SERVO_NUMBER 			= R23
+                                 .DEF		POSITION_LOW 			= R24
+                                 .DEF 		POSITION_HIGH 			= R25
+                                 
+                                 ;I2C.INC
+                                 .def        temp =r20            ;worker register
+                                 .def        I2C_DATA =R21
+                                 .INCLUDE	"ANGULOS.INC"
+                                 
+                                 .EQU		SERVO_TESTER_1 = 7
+                                 .EQU		SERVO_TESTER_2 = 5
+                                 .EQU		ANG_TESTER_1= 1325
+                                 .EQU		ANG_TESTER_2=900
+                                 
+                                 .EQU		CANT_ANGS=4
+                                 
+                                 
+                                 .DSEG
+                                 
+                                 .ORG	0X500 ;VER DIRECCION
+000500                           ANG_YAW_0:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X508
+000508                           ANG_YAW_15:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X516
+000516                           ANG_YAW_30:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X524
+000524                           ANG_YAW_45:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X532
+000532                           ANG_YAW_60:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X540
+000540                           ANG_YAW_75:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X548
+000548                           ANG_YAW_90:		.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X556
+000556                           ANG_YAW_105:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X564
+000564                           ANG_YAW_120:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X572
+000572                           ANG_YAW_135:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X580
+000580                           ANG_YAW_150:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X588
+000588                           ANG_YAW_165:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X596
+000596                           ANG_YAW_180:	.BYTE	(CANT_ANGS<<1)	;ANGULOS DE SERVO SUPERIOR DE CADA PATA
+                                 
+                                 .ORG	0X604
+000604                           ANG_ROLL_0:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X612
+000612                           ANG_ROLL_30:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X620
+000620                           ANG_ROLL_45:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X628
+000628                           ANG_ROLL_60:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X636
+000636                           ANG_ROLL_90:	.BYTE	(CANT_ANGS<<1)	;ANGULOS DE SERVO INFERIOR DE CADA PATA
+                                 .ORG	0X644
+000644                           ANG_ROLL_120:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X652
+000652                           ANG_ROLL_150:	.BYTE	(CANT_ANGS<<1)
+                                 .ORG	0X660
+000660                           ANG_ROLL_180:	.BYTE	(CANT_ANGS<<1)
+                                 
+                                 
+                                 .CSEG
+                                 
+                                 INIC_ANGULOS:
+000057 d01e                      	RCALL INIC_ARR_ANG_YAW_0
+000058 d024                      	RCALL INIC_ARR_ANG_YAW_15
+000059 d02a                      	RCALL INIC_ARR_ANG_YAW_30
+00005a d030                      	RCALL INIC_ARR_ANG_YAW_45
+00005b d036                      	RCALL INIC_ARR_ANG_YAW_60
+00005c d03c                      	RCALL INIC_ARR_ANG_YAW_75
+00005d d042                      	RCALL INIC_ARR_ANG_YAW_90
+00005e d048                      	RCALL INIC_ARR_ANG_YAW_105
+00005f d04e                      	RCALL INIC_ARR_ANG_YAW_120
+000060 d054                      	RCALL INIC_ARR_ANG_YAW_135
+000061 d05a                      	RCALL INIC_ARR_ANG_YAW_150
+000062 d060                      	RCALL INIC_ARR_ANG_YAW_165
+000063 d066                      	RCALL INIC_ARR_ANG_YAW_180
+                                 
+000064 d06c                      	RCALL INIC_ARR_ANG_ROLL_0
+000065 d072                      	RCALL INIC_ARR_ANG_ROLL_30
+000066 d078                      	RCALL INIC_ARR_ANG_ROLL_45
+000067 d07e                      	RCALL INIC_ARR_ANG_ROLL_60
+000068 d084                      	RCALL INIC_ARR_ANG_ROLL_90
+000069 d08a                      	RCALL INIC_ARR_ANG_ROLL_120
+00006a d090                      	RCALL INIC_ARR_ANG_ROLL_150
+00006b d096                      	RCALL INIC_ARR_ANG_ROLL_180
+                                 
+00006c 9508                      	RET
+                                 
+                                 
+                                 ;SE DEBE HACER APUNTAR A X AL ARREGLO DEL ANGULO QUE SE BUSCA
+                                 FIND_ANG_LEG:		
+00006d 2f13                      		MOV COUNTER,LEG_H
+00006e 9516                      		LSR COUNTER
+00006f 9513                      		INC	COUNTER
+                                 
+                                 	LOOP_FIND_ANG_LEG:
+000070 918d                      		LD	ANG_L,X+
+000071 919d                      		LD	ANG_H,X+
+000072 951a                      		DEC COUNTER
+000073 f009                      		BREQ	SEGUIR
+000074 cffb                      		RJMP LOOP_FIND_ANG_LEG
+                                 
+000075 9508                      	SEGUIR:	RET
+                                 
+                                 
+                                 
+                                 INIC_ARR_ANG_YAW_0:
+000076 e0e0                      	LDI ZL,LOW(ROM_ANG_YAW_0<<1)
+000077 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_0<<1)
+000078 e0a0                      	LDI XL,LOW(ANG_YAW_0)
+000079 e0b5                      	LDI XH,HIGH(ANG_YAW_0)
+00007a e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+00007b d08d                      	RCALL LOOP_ANG
+00007c 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_15:
+00007d e0e8                      	LDI ZL,LOW(ROM_ANG_YAW_15<<1)
+00007e e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_15<<1)
+00007f e0a8                      	LDI XL,LOW(ANG_YAW_15)
+000080 e0b5                      	LDI XH,HIGH(ANG_YAW_15)
+000081 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+000082 d086                      	RCALL LOOP_ANG
+000083 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_30:
+000084 e1e0                      	LDI ZL,LOW(ROM_ANG_YAW_30<<1)
+000085 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_30<<1)
+000086 e1a6                      	LDI XL,LOW(ANG_YAW_30)
+000087 e0b5                      	LDI XH,HIGH(ANG_YAW_30)
+000088 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+000089 d07f                      	RCALL LOOP_ANG
+00008a 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_45:
+00008b e1e8                      	LDI ZL,LOW(ROM_ANG_YAW_45<<1)
+00008c e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_45<<1)
+00008d e2a4                      	LDI XL,LOW(ANG_YAW_45)
+00008e e0b5                      	LDI XH,HIGH(ANG_YAW_45)
+00008f e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+000090 d078                      	RCALL LOOP_ANG
+000091 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_60:
+000092 e2e0                      	LDI ZL,LOW(ROM_ANG_YAW_60<<1)
+000093 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_60<<1)
+000094 e3a2                      	LDI XL,LOW(ANG_YAW_60)
+000095 e0b5                      	LDI XH,HIGH(ANG_YAW_60)
+000096 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+000097 d071                      	RCALL LOOP_ANG
+000098 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_75:
+000099 e2e8                      	LDI ZL,LOW(ROM_ANG_YAW_75<<1)
+00009a e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_75<<1)
+00009b e4a0                      	LDI XL,LOW(ANG_YAW_75)
+00009c e0b5                      	LDI XH,HIGH(ANG_YAW_75)
+00009d e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+00009e d06a                      	RCALL LOOP_ANG
+00009f 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_90:
+0000a0 e3e0                      	LDI ZL,LOW(ROM_ANG_YAW_90<<1)
+0000a1 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_90<<1)
+0000a2 e4a8                      	LDI XL,LOW(ANG_YAW_90)
+0000a3 e0b5                      	LDI XH,HIGH(ANG_YAW_90)
+0000a4 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000a5 d063                      	RCALL LOOP_ANG
+0000a6 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_105:
+0000a7 e3e8                      	LDI ZL,LOW(ROM_ANG_YAW_105<<1)
+0000a8 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_105<<1)
+0000a9 e5a6                      	LDI XL,LOW(ANG_YAW_105)
+0000aa e0b5                      	LDI XH,HIGH(ANG_YAW_105)
+0000ab e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000ac d05c                      	RCALL LOOP_ANG
+0000ad 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_120:
+0000ae e4e0                      	LDI ZL,LOW(ROM_ANG_YAW_120<<1)
+0000af e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_120<<1)
+0000b0 e6a4                      	LDI XL,LOW(ANG_YAW_120)
+0000b1 e0b5                      	LDI XH,HIGH(ANG_YAW_120)
+0000b2 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000b3 d055                      	RCALL LOOP_ANG
+0000b4 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_135:
+0000b5 e4e8                      	LDI ZL,LOW(ROM_ANG_YAW_135<<1)
+0000b6 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_135<<1)
+0000b7 e7a2                      	LDI XL,LOW(ANG_YAW_135)
+0000b8 e0b5                      	LDI XH,HIGH(ANG_YAW_135)
+0000b9 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000ba d04e                      	RCALL LOOP_ANG
+0000bb 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_150:
+0000bc e5e0                      	LDI ZL,LOW(ROM_ANG_YAW_150<<1)
+0000bd e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_150<<1)
+0000be e8a0                      	LDI XL,LOW(ANG_YAW_150)
+0000bf e0b5                      	LDI XH,HIGH(ANG_YAW_150)
+0000c0 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000c1 d047                      	RCALL LOOP_ANG
+0000c2 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_165:
+0000c3 e5e8                      	LDI ZL,LOW(ROM_ANG_YAW_165<<1)
+0000c4 e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_165<<1)
+0000c5 e8a8                      	LDI XL,LOW(ANG_YAW_165)
+0000c6 e0b5                      	LDI XH,HIGH(ANG_YAW_165)
+0000c7 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000c8 d040                      	RCALL LOOP_ANG
+0000c9 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_YAW_180:
+0000ca e6e0                      	LDI ZL,LOW(ROM_ANG_YAW_180<<1)
+0000cb e0fa                      	LDI ZH,HIGH(ROM_ANG_YAW_180<<1)
+0000cc e9a6                      	LDI XL,LOW(ANG_YAW_180)
+0000cd e0b5                      	LDI XH,HIGH(ANG_YAW_180)
+0000ce e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000cf d039                      	RCALL LOOP_ANG
+0000d0 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_ROLL_0:
+0000d1 e6e8                      	LDI ZL,LOW(ROM_ANG_ROLL_0<<1)
+0000d2 e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_0<<1)
+0000d3 e0a4                      	LDI XL,LOW(ANG_ROLL_0)
+0000d4 e0b6                      	LDI XH,HIGH(ANG_ROLL_0)
+0000d5 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000d6 d032                      	RCALL LOOP_ANG
+0000d7 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_ROLL_30:
+0000d8 e7e0                      	LDI ZL,LOW(ROM_ANG_ROLL_30<<1)
+0000d9 e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_30<<1)
+0000da e1a2                      	LDI XL,LOW(ANG_ROLL_30)
+0000db e0b6                      	LDI XH,HIGH(ANG_ROLL_30)
+0000dc e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000dd d02b                      	RCALL LOOP_ANG
+0000de 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_ROLL_45:
+0000df e7e8                      	LDI ZL,LOW(ROM_ANG_ROLL_45<<1)
+0000e0 e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_45<<1)
+0000e1 e2a0                      	LDI XL,LOW(ANG_ROLL_45)
+0000e2 e0b6                      	LDI XH,HIGH(ANG_ROLL_45)
+0000e3 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000e4 d024                      	RCALL LOOP_ANG
+0000e5 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_ROLL_60:
+0000e6 e8e0                      	LDI ZL,LOW(ROM_ANG_ROLL_60<<1)
+0000e7 e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_60<<1)
+0000e8 e2a8                      	LDI XL,LOW(ANG_ROLL_60)
+0000e9 e0b6                      	LDI XH,HIGH(ANG_ROLL_60)
+0000ea e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000eb d01d                      	RCALL LOOP_ANG
+0000ec 9508                      	RET
+                                 
+                                 
+                                 INIC_ARR_ANG_ROLL_90:
+0000ed e8e8                      	LDI ZL,LOW(ROM_ANG_ROLL_90<<1)
+0000ee e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_90<<1)
+0000ef e3a6                      	LDI XL,LOW(ANG_ROLL_90)
+0000f0 e0b6                      	LDI XH,HIGH(ANG_ROLL_90)
+0000f1 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000f2 d016                      	RCALL LOOP_ANG
+0000f3 9508                      	RET
+                                 
+                                 
+                                 INIC_ARR_ANG_ROLL_120:
+0000f4 e9e0                      	LDI ZL,LOW(ROM_ANG_ROLL_120<<1)
+0000f5 e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_120<<1)
+0000f6 e4a4                      	LDI XL,LOW(ANG_ROLL_120)
+0000f7 e0b6                      	LDI XH,HIGH(ANG_ROLL_120)
+0000f8 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+0000f9 d00f                      	RCALL LOOP_ANG
+0000fa 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_ROLL_150:
+0000fb e9e8                      	LDI ZL,LOW(ROM_ANG_ROLL_150<<1)
+0000fc e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_150<<1)
+0000fd e5a2                      	LDI XL,LOW(ANG_ROLL_150)
+0000fe e0b6                      	LDI XH,HIGH(ANG_ROLL_150)
+0000ff e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+000100 d008                      	RCALL LOOP_ANG
+000101 9508                      	RET
+                                 
+                                 INIC_ARR_ANG_ROLL_180:
+000102 eae0                      	LDI ZL,LOW(ROM_ANG_ROLL_180<<1)
+000103 e0fa                      	LDI ZH,HIGH(ROM_ANG_ROLL_180<<1)
+000104 e6a0                      	LDI XL,LOW(ANG_ROLL_180)
+000105 e0b6                      	LDI XH,HIGH(ANG_ROLL_180)
+000106 e018                      	LDI COUNTER,(CANT_ANGS<<1)
+                                 
+000107 d001                      	RCALL LOOP_ANG
+000108 9508                      	RET
+                                 
+                                 LOOP_ANG:
+000109 9145                      	LPM TEMP,Z+
+00010a 934d                      	ST X+,TEMP
+00010b 951a                      	DEC COUNTER
+                                 
+00010c f7e1                      	BRNE LOOP_ANG
+                                 
+00010d 9508                      	RET
+                                 
+                                 
+                                 SERVO_TEST_ANG:
+00010e e077                      	LDI 	R23,SERVO_TESTER_1
+00010f e28d                      	LDI 	R24,LOW(ANG_TESTER_1)
+000110 e095                      	LDI 	R25,HIGH(ANG_TESTER_1)
+000111 d495                      	RCALL 	PCA9685_MOVE
+                                 
+                                 
+000112 e075                      	LDI 	R23,SERVO_TESTER_2
+000113 e884                      	LDI 	R24,LOW(ANG_TESTER_2)
+000114 e093                      	LDI 	R25,HIGH(ANG_TESTER_2)
+                                 
+000115 d491                      	RCALL 	PCA9685_MOVE
+000116 d661                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000117 9508                      	RET
+                                 
+                                 
+                                 SERVO_TEST_ANG_TOTAL: ;Prueba el servo en 3 pocisiones
+000118 e071                      	LDI 	R23,SERVO_TESTER
+000119 e088                      	LDI 	R24,LOW(1800)
+00011a e097                      	LDI 	R25,HIGH(1800)
+00011b d48b                      	RCALL 	PCA9685_MOVE
+00011c d65b                      	RCALL 	MOVEMENT_DELAY	
+                                 
+00011d e071                      	LDI 	R23,SERVO_TESTER
+00011e ed86                      	LDI 	R24,LOW(1750)
+00011f e096                      	LDI 	R25,HIGH(1750)
+000120 d486                      	RCALL 	PCA9685_MOVE
+000121 d656                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000122 e071                      	LDI 	R23,SERVO_TESTER
+000123 e287                      	LDI 	R24,LOW(1575)
+000124 e096                      	LDI 	R25,HIGH(1575)
+000125 d481                      	RCALL 	PCA9685_MOVE
+000126 d651                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000127 e071                      	LDI 	R23,SERVO_TESTER
+000128 e788                      	LDI 	R24,LOW(1400)
+000129 e095                      	LDI 	R25,HIGH(1400)
+00012a d47c                      	RCALL 	PCA9685_MOVE
+00012b d64c                      	RCALL 	MOVEMENT_DELAY	
+                                 
+00012c e071                      	LDI 	R23,SERVO_TESTER
+00012d ee82                      	LDI 	R24,LOW(1250)
+00012e e094                      	LDI 	R25,HIGH(1250)
+00012f d477                      	RCALL 	PCA9685_MOVE
+000130 d647                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000131 e071                      	LDI 	R23,SERVO_TESTER
+000132 e786                      	LDI 	R24,LOW(1142)
+000133 e094                      	LDI 	R25,HIGH(1142)
+000134 d472                      	RCALL 	PCA9685_MOVE
+000135 d642                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000136 e071                      	LDI 	R23,SERVO_TESTER
+000137 e08a                      	LDI 	R24,LOW(1034)
+000138 e094                      	LDI 	R25,HIGH(1034)
+000139 d46d                      	RCALL 	PCA9685_MOVE
+00013a d63d                      	RCALL 	MOVEMENT_DELAY	
+                                 
+00013b e071                      	LDI 	R23,SERVO_TESTER
+00013c e98d                      	LDI 	R24,LOW(925)
+00013d e093                      	LDI 	R25,HIGH(925)
+00013e d468                      	RCALL 	PCA9685_MOVE
+00013f d638                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000140 e071                      	LDI 	R23,SERVO_TESTER
+000141 e380                      	LDI 	R24,LOW(816)
+000142 e093                      	LDI 	R25,HIGH(816)
+000143 d463                      	RCALL 	PCA9685_MOVE
+000144 d633                      	RCALL 	MOVEMENT_DELAY	
+                                 
+000145 e071                      	LDI 	R23,SERVO_TESTER
+000146 ec84                      	LDI 	R24,LOW(708)
+000147 e092                      	LDI 	R25,HIGH(708)
+000148 d45e                      	RCALL 	PCA9685_MOVE
+000149 d62e                      	RCALL 	MOVEMENT_DELAY	
+                                 
+00014a e071                      	LDI 	R23,SERVO_TESTER
+00014b e588                      	LDI 	R24,LOW(600)
+00014c e092                      	LDI 	R25,HIGH(600)
+00014d d459                      	RCALL 	PCA9685_MOVE
+00014e d629                      	RCALL 	MOVEMENT_DELAY	
+                                 
+00014f 9508                      	RET
+                                 
+                                 
+                                 ;ARREGLOS DE ANGULOS(EN GRADOS): ANG_X: .DB PATA_1,PATA_2,PATA_3;PATA_4
+                                 ;PATA:				1		2		3		4	
+                                 .ORG	0X500
+000500 06d6
+000501 0320
+000502 0708
+000503 0181                      ROM_ANG_YAW_0: .DW	1750,	800,	1800,	385
+000504 06d6
+000505 0320
+000506 06a4
+000507 01c2                      ROM_ANG_YAW_15:.DW	1750,	800,	1700,	450
+000508 06d6
+000509 0320
+00050a 0640
+00050b 023f                      ROM_ANG_YAW_30:.DW	1750,	800,	1600,	575
+00050c 06d6
+00050d 0320
+00050e 060e
+00050f 02bc                      ROM_ANG_YAW_45:.DW	1750,	800,	1550,	700
+000510 0627
+000511 039d
+000512 0514
+000513 0339                      ROM_ANG_YAW_60:.DW	1575,	925,	1300,	825
+000514 0578
+000515 044c
+000516 04b0
+000517 039d                      ROM_ANG_YAW_75:.DW	1400,	1100,	1200,	925
+000518 0514
+000519 04b0
+00051a 044c
+00051b 041a                      ROM_ANG_YAW_90:.DW	1300,	1200,	1100,	1050
+00051c 0474
+00051d 0550
+00051e 03e8
+00051f 04b0                      ROM_ANG_YAW_105:.DW	1140,	1360,	1000,	1200
+000520 0406
+000521 05d2
+000522 0352
+000523 052d                      ROM_ANG_YAW_120:.DW	1030,	1490,	850,	1325
+000524 039d
+000525 0640
+000526 02ee
+000527 05aa                      ROM_ANG_YAW_135:.DW 925,	1600,	750,	1450
+000528 0330
+000529 06d6
+00052a 02ee
+00052b 05aa                      ROM_ANG_YAW_150:.DW 816,	1750,	750,	1450
+00052c 02c4
+00052d 074e
+00052e 02ee
+00052f 05aa                      ROM_ANG_YAW_165:.DW	708,	1870,	750,	1450
+000530 0258
+000531 07d0
+000532 02ee
+000533 05aa                      ROM_ANG_YAW_180:.DW	600,	2000,	750,	1450		;ANGULOS DE SERVO SUPERIOR DE CADA PATA
+                                 
+000534 01f4
+000535 01f4
+000536 02bc
+000537 01f4                      ROM_ANG_ROLL_0:.DW	500,	500,	700,	500
+000538 02ee
+000539 02ee
+00053a 0384
+00053b 0320                      ROM_ANG_ROLL_30:.DW	750,	750,	900,	800
+00053c 0352
+00053d 0352
+00053e 03e8
+00053f 0384                      ROM_ANG_ROLL_45:.DW	850,	850,	1000,	900
+000540 03b6
+000541 03b6
+000542 044c
+000543 03e8                      ROM_ANG_ROLL_60:.DW	950,	950,	1100,	1000
+000544 04b0
+000545 04b0
+000546 05dc
+000547 0578                      ROM_ANG_ROLL_90:.DW	1200,	1200,	1500,	1400	
+000548 05aa
+000549 05aa
+00054a 05dc
+00054b 0578                      ROM_ANG_ROLL_120:.DW 1450,	1450,	1500,	1400	
+00054c 06a4
+00054d 06a4
+00054e 05dc
+00054f 0578                      ROM_ANG_ROLL_150:.DW 1700,	1700,	1500,	1400	
+000550 07d0
+000551 07d0
+000552 05dc
+000553 0578                      ROM_ANG_ROLL_180:.DW 2000,	2000,	1500,	1400	;ANGULOS DE SERVO INFERIOR DE CADA PATA
+                                 
+                                 
+                                 .INCLUDE 	"MOVEMENT.INC"
+                                 
+                                 .EQU 		SERVO_MID = 1000
+                                 .EQU 		SERVO_MIN = 500
+                                 
+                                 .EQU		LEG_1 = 0X0102
+                                 .EQU		LEG_2 = 0X0304
+                                 .EQU		LEG_3 = 0X0506
+                                 .EQU		LEG_4 = 0X0708
+                                 
+                                 .EQU		SERVO_TESTER = 1
+                                 
+                                 .INCLUDE 	"PCA9685.INC"
+                                 
+                                 
+                                 ;.def        I2C_DATA =r21
+                                 
+                                 ; Equate statements
+                                 .equ        start        		= $08        ; Start Condition
+                                 .equ        Rep_start    		= $10        ; Repeated Start Condition Message
+                                 .equ        MT_SLA_ACK   		= $18        ; Master Transmitter Slave Address Acknowledge
+                                 .equ        MT_I2C_DATA_ACK 	= $28        ; Master Transmitter I2C_DATA Acknowledge
+                                 .equ        MT_I2C_DATA_NACK	= $30        ; Master Transmitter I2C_DATA Not Acknowledge
+                                 .equ        MR_SLA_ACK    		= $40        ; Master Receiver Slave Address Acknowledge
+                                 .equ        MR_SLA_NACK    		= $48        ; Master Receiver Slave Address Acknowledge
+                                 .equ        MR_I2C_DATA_ACK 	= $50        ; Master Receiver I2C_DATA Acknowlede
+                                 .equ        MR_I2C_DATA_NACK	= $58        ; Master Receiver I2C_DATA Not Acknowledge
+                                 .equ        W            		= 0          ; Write Bit
+                                 .equ        R            		= 1          ; Read Bit
+                                 ;óóóóóóóóóóóóóóóóóóóóóñ
+                                 ; Reset
+                                 ;óóóóóóóóóóóóóóóóóóóóóñ
+                                 
+                                 
+                                 I2C_SETUP:
+                                 ;óóóóóóóóóóóóóóóóóóóóóñ
+                                 ;setup DDR/IO
+                                 ;óóóóóóóóóóóóóóóóóóóóóñ
+                                 ;set pullups, DDRC output
+000554 934f                      	PUSH	TEMP
+000555 ef4f                      	ldi    	temp, 0xff
+000556 b947                      	out    	DDRC,temp
+000557 b948                      	out    	PORTC,temp
+                                 
+                                 ;óóóóóóóóóóóóóóóóóóóóóñ
+                                 ;setup speed etc. of i2c port
+                                 ;óóóóóóóóóóóóóóóóóóóóóñ
+                                 ;400Khz=8MHz/(16+2*TWBR*CLKPRS) TWBR and clock presecaler set
+                                 ;i2c freq.  clock prescaler default is 1, and is set in
+                                 ;TWSR
+000558 e448                      	ldi    	temp,72
+000559 9340 00b8                 	sts    	TWBR,temp
+                                 
+00055b e040                      	ldi    	temp,0x00
+00055c 9340 00b9                 	sts    	TWSR,temp
+00055e 914f                      	POP 	TEMP
+00055f 9508                      	RET
+                                 
+                                 ;óóóóó-SEND I2C STARTóóóóóóóóóóóóóóóóóóóóóñ
+                                 ;óóóóó-This will send a I2C_DATA out as the addressóóóóóóóóóóóóó
+                                 ;óóóóó-sends start condition and addressóóóóóóóóóóóóóóó-
+                                 I2C_START:
+000560 934f                      	PUSH 	TEMP
+000561 ea44                      	ldi    	temp, (1<<TWINT)|(1<<TWSTA)|(1<<TWEN)
+000562 9340 00bc                 	sts     TWCR,temp
+                                 
+                                 ;wait for start condition to be sent.  when TWINT in TWCR is cleared, it is sent
+                                 WAIT_START:
+000564 9140 00bc                 	lds     temp,TWCR
+000566 ff47                      	sbrs    temp,TWINT
+000567 cffc                      	rjmp    WAIT_START
+                                 ;check TWSR for bus status.
+                                 ;andi masks last three bits, which are 2=? 1:0prescaler value
+000568 9140 00b9                 	lds     temp,TWSR
+00056a 7f48                      	andi    temp,0b11111000
+00056b 3048                      	cpi     temp,START
+00056c f009                      	breq    PC+2
+00056d 940c 0044                 	jmp     errloop
+00056f 914f                      	POP 	TEMP
+000570 9508                      	ret
+                                 
+                                 ;óóóóñPUT I2Cóóóóóóóóóóóóóóóóóóóóóóóóñ
+                                 ;óóóóñbytes is stored in r17 aka I2C_DATAóóóóóóóóóóóóóóóóñ
+                                 ;use this by putting the address or I2C_DATA to put on the i2c line in I2C_DATA (r21)
+                                 ;then this function will disable the TW int, write I2C_DATA to TWDR, and wait for an ack
+                                 I2C_PUT:
+000571 934f                      	PUSH 	TEMP
+                                 NEXT1:
+000572 e044                      	ldi     temp,(0<<TWINT) | (1<<TWEN)
+000573 9340 00bc                 	sts     TWCR,temp
+000575 9350 00bb                 	sts     TWDR,I2C_DATA
+000577 e844                      	ldi     temp,(1<<TWINT) | (1<<TWEN)
+000578 9340 00bc                 	sts     TWCR,temp
+                                 WAIT_DONE:
+00057a 9140 00bc                 	lds     temp,TWCR
+00057c ff47                      	sbrs    temp,TWINT
+00057d cffc                      	rjmp    WAIT_DONE
+00057e 914f                      	POP 	TEMP
+00057f 9508                      	ret
+                                 
+                                 I2C_GET:
+000580 934f                      	PUSH 	TEMP
+                                 WAIT_FOR_BYTE:
+000581 9140 00bc                 	lds     temp,TWCR
+000583 ff47                      	sbrs    temp,TWINT
+000584 cffc                      	rjmp    WAIT_FOR_BYTE
+000585 9150 00bb                 	lds     I2C_DATA,TWDR
+000587 914f                      	POP		TEMP
+000588 9508                      	ret
+                                 
+                                 ;óóóóó-SEND I2C STopóóóóóóóóóóóóóóóóóóóóóñ
+                                 I2C_STOP:
+000589 934f                      	PUSH 	TEMP
+00058a e944                      	ldi     temp,(1<<TWINT)|(1<<TWSTO)|(1<<TWEN)
+00058b 9340 00bc                 	sts     TWCR,temp
+                                 ;check TWCR to see if there is still a transmission- if not, stop bit has been sent
+                                 Check1:
+00058d 9140 00bc                 	lds     temp,TWCR
+00058f 7140                      	andi    temp,0b00010000        ; Check to see that no transmission is going on
+000590 f7e1                      	brne    Check1
+000591 914f                      	POP 	TEMP
+000592 9508                      
+                                 
+                                 .EQU	PCA9685_DIR 		= 0x40
+                                 .EQU 	PCA9685_MODE1		= 0x00
+                                 .EQU 	PCA9685_LED0 		= 0x06
+                                 .EQU 	PCA9685_PRE_SCALE 	= 0xFE
+                                 
+                                 
+                                 PCA9685_SETUP:
+                                 
+                                 
+000593 935f                      	PUSH 	R21
+000594 dfbf                      	RCALL 	I2C_SETUP
+                                 
+                                 	
+000595 dfca                      	RCALL	I2C_START
+000596 e850                      	LDI 	R21,(PCA9685_DIR << 1)
+000597 dfd9                      	RCALL 	I2C_PUT
+000598 e050                      	LDI 	R21,PCA9685_MODE1
+                                 
+                                 
+000599 dfd7                      	RCALL 	I2C_PUT
+                                 
+00059a e250                      	LDI 	R21,0x20 ;SET AUTO INCREMENT
+00059b dfd5                      	RCALL 	I2C_PUT
+00059c dfec                      	RCALL 	I2C_STOP
+                                 
+                                 
+00059d dfc2                      	RCALL	I2C_START
+00059e e850                      	LDI 	R21,(PCA9685_DIR << 1)
+00059f dfd1                      	RCALL 	I2C_PUT
+0005a0 ef5e                      	LDI 	R21,PCA9685_PRE_SCALE
+0005a1 dfcf                      	RCALL 	I2C_PUT
+0005a2 e655                      	LDI 	R21,0x65 	
+0005a3 dfcd                      	RCALL 	I2C_PUT
+0005a4 dfe4                      	RCALL 	I2C_STOP
+                                 
+                                 
+0005a5 915f                      	POP 	R21
+0005a6 9508                      	RET
+                                 
+                                 ;PRE
+                                 ;R23 -> SERVO NUMBER
+                                 ;R24 -> POS LOW
+                                 ;R25 -> POS HIGH
+                                 PCA9685_MOVE:
+0005a7 935f                      	PUSH	R21
+                                 	;MULTIPLY BY 4
+0005a8 0f77                      	LSL 	SERVO_NUMBER
+0005a9 0f77                      	LSL 	SERVO_NUMBER
+                                 	;ADD 	LED0 DIR
+                                 	;CLR 	R21
+0005aa e056                      	LDI 	R21,PCA9685_LED0
+0005ab 0f75                      	ADD		SERVO_NUMBER,R21
+                                 	
+0005ac dfb3                      	RCALL	I2C_START
+0005ad e850                      	LDI 	R21,(PCA9685_DIR << 1)
+0005ae dfc2                      	RCALL 	I2C_PUT
+0005af 2f57                      	MOV 	R21,SERVO_NUMBER
+0005b0 dfc0                      	RCALL	I2C_PUT
+0005b1 e050                      	LDI 	R21,0x00			;LEDN_ON_LOW
+0005b2 dfbe                      	RCALL 	I2C_PUT	
+0005b3 e050                      	LDI 	R21,0x00			;LEDN_ON_HIGH
+0005b4 dfbc                      	RCALL 	I2C_PUT
+0005b5 2f58                      	MOV 	R21,POSITION_LOW	;LEDN_OFF_LOW
+0005b6 dfba                      	RCALL 	I2C_PUT
+0005b7 2f59                      	MOV 	R21,POSITION_HIGH	;LEDN_OFF_HIGH
+0005b8 dfb8                      	RCALL 	I2C_PUT
+0005b9 dfcf                      	RCALL 	I2C_STOP
+                                 
+0005ba 915f                      	POP 	R21
+0005bb 9508                      	RET
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 MOVEMENT_SETUP:
+0005bc dfd6                      	RCALL 	PCA9685_SETUP
+0005bd d001                      	RCALL	INITIAL_POSITION
+                                 
+0005be 9508                      	RET
+                                 
+                                 INITIAL_POSITION:
+                                 
+0005bf e022                      	LDI		LEG_L,LOW(LEG_1)
+0005c0 e031                      	LDI		LEG_H,HIGH(LEG_1)
+0005c1 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0005c2 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0005c3 d01c                      	RCALL	ROLL_LEG	
+0005c4 e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+0005c5 e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+0005c6 d01d                      	RCALL	YAW_LEG	
+                                 	;PATA 1 A 135∞
+                                 	;RCALL	MOVEMENT_DELAY
+                                 
+0005c7 e024                      	LDI		LEG_L,LOW(LEG_2)
+0005c8 e033                      	LDI		LEG_H,HIGH(LEG_2)
+0005c9 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0005ca e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0005cb d014                      	RCALL	ROLL_LEG	
+0005cc e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+0005cd e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+0005ce d015                      	RCALL	YAW_LEG	
+                                 	;PATA 2 A 135∞
+                                 	;RCALL	MOVEMENT_DELAY
+                                 
+0005cf e026                      	LDI		LEG_L,LOW(LEG_3)
+0005d0 e035                      	LDI		LEG_H,HIGH(LEG_3)
+0005d1 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0005d2 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0005d3 d00c                      	RCALL	ROLL_LEG	
+0005d4 e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+0005d5 e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+0005d6 d00d                      	RCALL	YAW_LEG	
+                                 	;PATA 3 A 45∞
+                                 	;RCALL	MOVEMENT_DELAY
+                                 
+0005d7 e028                      	LDI		LEG_L,LOW(LEG_4)
+0005d8 e037                      	LDI		LEG_H,HIGH(LEG_4)
+0005d9 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0005da e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0005db d004                      	RCALL	ROLL_LEG	
+0005dc e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+0005dd e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+0005de d005                      	RCALL	YAW_LEG	
+                                 	;PATA 4 A 45∞
+                                 	;RCALL	MOVEMENT_DELAY
+                                 
+0005df 9508                      	RET	
+                                 
+                                 
+                                 ROLL_LEG:
+0005e0 da8c                      	RCALL	FIND_ANG_LEG
+0005e1 2f72                      	MOV 	R23,LEG_L
+0005e2 dfc4                      	RCALL 	PCA9685_MOVE	
+                                 
+0005e3 9508                      	RET
+                                 
+                                 YAW_LEG:
+0005e4 da88                      	RCALL	FIND_ANG_LEG
+0005e5 2f73                      	MOV 	R23,LEG_H
+0005e6 dfc0                      	RCALL 	PCA9685_MOVE	
+                                 	
+0005e7 9508                      	RET
+                                 
+                                 MOVE_FORWARD:
+0005e8 d024                      	RCALL	MOVE_RIGHT_FORWARD
+0005e9 d001                      	RCALL	MOVE_LEFT_FORWARD
+                                 
+                                 ;	RCALL	MOVEMENT_DELAY
+                                 ;	RCALL	MOVEMENT_DELAY
+                                 
+0005ea 9508                      	RET
+                                 
+                                 MOVE_LEFT_FORWARD:
+0005eb e022                      	LDI		LEG_L,LOW(LEG_1)
+0005ec e031                      	LDI		LEG_H,HIGH(LEG_1)
+0005ed e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0005ee e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0005ef dff0                      	RCALL	ROLL_LEG	
+                                 	;PATA 1 ABAJO
+0005f0 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+0005f1 e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+0005f2 dff1                      	RCALL	YAW_LEG	
+                                 	;PATA 1 A 90∞
+                                 
+0005f3 e028                      	LDI		LEG_L,LOW(LEG_4)
+0005f4 e037                      	LDI		LEG_H,HIGH(LEG_4)
+0005f5 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0005f6 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0005f7 dfe8                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ABAJO
+0005f8 e1a6                      	LDI		XL,LOW(ANG_YAW_30)
+0005f9 e0b5                      	LDI		XH,HIGH(ANG_YAW_30)
+0005fa dfe9                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 45∞
+                                 
+                                 
+0005fb e024                      	LDI		LEG_L,LOW(LEG_2)
+0005fc e033                      	LDI		LEG_H,HIGH(LEG_2)
+0005fd e2a8                      	LDI		XL,LOW(ANG_ROLL_60)
+0005fe e0b6                      	LDI		XH,HIGH(ANG_ROLL_60)
+0005ff dfe0                      	RCALL	ROLL_LEG
+                                 	;PARA 2 ARRIBA
+000600 e8a0                      	LDI		XL,LOW(ANG_YAW_150)
+000601 e0b5                      	LDI		XH,HIGH(ANG_YAW_150)
+000602 dfe1                      	RCALL	YAW_LEG
+                                 	;PATA 2 A 150∞
+                                 
+000603 e026                      	LDI		LEG_L,LOW(LEG_3)
+000604 e035                      	LDI		LEG_H,HIGH(LEG_3)
+000605 e2a8                      	LDI		XL,LOW(ANG_ROLL_60)
+000606 e0b6                      	LDI		XH,HIGH(ANG_ROLL_60)
+000607 dfd8                      	RCALL	ROLL_LEG
+                                 	;PATA 3 ARRIBA
+000608 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+000609 e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+00060a dfd9                      	RCALL	YAW_LEG
+                                 	;PATA 3 A 90∞
+                                 
+00060b da39                      	RCALL DELAY_10_S
+00060c 9508                      	RET
+                                 
+                                 
+                                 MOVE_RIGHT_FORWARD:
+00060d e024                      	LDI		LEG_L,LOW(LEG_2)
+00060e e033                      	LDI		LEG_H,HIGH(LEG_2)
+00060f e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000610 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000611 dfce                      	RCALL	ROLL_LEG	
+                                 	;PATA 2 ARRIBA
+000612 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+000613 e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+000614 dfcf                      	RCALL	YAW_LEG	
+                                 	;PATA 2 A 90∞
+                                 
+000615 e026                      	LDI		LEG_L,LOW(LEG_3)
+000616 e035                      	LDI		LEG_H,HIGH(LEG_3)
+000617 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000618 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000619 dfc6                      	RCALL	ROLL_LEG
+                                 	;PATA 3 ARRIBA
+00061a e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+00061b e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+00061c dfc7                      	RCALL	YAW_LEG
+                                 ;	RCALL 	DELAY_10_S		
+                                 	;PATA 3 A 45∞
+                                 
+                                 
+00061d e022                      	LDI		LEG_L,LOW(LEG_1)
+00061e e031                      	LDI		LEG_H,HIGH(LEG_1)
+00061f e2a8                      	LDI		XL,LOW(ANG_ROLL_60)
+000620 e0b6                      	LDI		XH,HIGH(ANG_ROLL_45)
+000621 dfbe                      	RCALL	ROLL_LEG
+                                 	;PARA 1 ABAJO
+000622 e8a0                      	LDI		XL,LOW(ANG_YAW_150)
+000623 e0b5                      	LDI		XH,HIGH(ANG_YAW_150)
+000624 dfbf                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 150∞
+                                 
+000625 e028                      	LDI		LEG_L,LOW(LEG_4)
+000626 e037                      	LDI		LEG_H,HIGH(LEG_4)
+000627 e2a8                      	LDI		XL,LOW(ANG_ROLL_60)
+000628 e0b6                      	LDI		XH,HIGH(ANG_ROLL_60)
+000629 dfb6                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ABAJO
+00062a e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+00062b e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+00062c dfb7                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 90∞
+                                 
+                                 
+00062d da17                      	RCALL DELAY_10_S
+00062e 9508                      	RET
+                                 
+                                 TURN_RIGHT:
+                                   TURN_RIGHT_MOVE_1:
+00062f e024                      	LDI		LEG_L,LOW(LEG_2)
+000630 e033                      	LDI		LEG_H,HIGH(LEG_2)
+000631 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000632 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000633 dfac                      	RCALL	ROLL_LEG
+                                 	;PATA 1 ARRIBA
+000634 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+000635 e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+000636 dfad                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 90∞
+                                 
+000637 e022                      	LDI		LEG_L,LOW(LEG_1)
+000638 e031                      	LDI		LEG_H,HIGH(LEG_1)
+000639 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+00063a e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+00063b dfa4                      	RCALL	ROLL_LEG
+                                 	;PATA 2 ABAJO
+00063c e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+00063d e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+00063e dfa5                      	RCALL	YAW_LEG
+                                 	;PATA 2 A 135∞
+                                 
+00063f e028                      	LDI		LEG_L,LOW(LEG_4)
+000640 e037                      	LDI		LEG_H,HIGH(LEG_4)
+000641 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+000642 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+000643 df9c                      	RCALL	ROLL_LEG
+                                 	;PATA 3 ABAJO
+000644 e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+000645 e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+000646 df9d                      	RCALL	YAW_LEG
+                                 	;PATA 3 A 45∞
+                                 
+000647 e026                      	LDI		LEG_L,LOW(LEG_3)
+000648 e035                      	LDI		LEG_H,HIGH(LEG_3)
+000649 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+00064a e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+00064b df94                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ARRIBA
+00064c e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+00064d e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+00064e df95                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 90∞
+                                 
+00064f d9f5                      	RCALL DELAY_10_S
+                                 
+                                   TURN_RIGHT_MOVE_2:
+000650 e024                      	LDI		LEG_L,LOW(LEG_2)
+000651 e033                      	LDI		LEG_H,HIGH(LEG_2)
+000652 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+000653 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+000654 df8b                      	RCALL	ROLL_LEG
+                                 	;PATA 1 ABAJO
+000655 e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+000656 e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+000657 df8c                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 135∞
+                                 
+000658 e022                      	LDI		LEG_L,LOW(LEG_1)
+000659 e031                      	LDI		LEG_H,HIGH(LEG_1)
+00065a e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+00065b e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+00065c df83                      	RCALL	ROLL_LEG
+                                 	;PATA 2 ARRIBA
+00065d e9a6                      	LDI		XL,LOW(ANG_YAW_180)
+00065e e0b5                      	LDI		XH,HIGH(ANG_YAW_180)
+00065f df84                      	RCALL	YAW_LEG
+                                 	;PATA 2 A 180∞
+                                 
+000660 e028                      	LDI		LEG_L,LOW(LEG_4)
+000661 e037                      	LDI		LEG_H,HIGH(LEG_4)
+000662 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000663 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000664 df7b                      	RCALL	ROLL_LEG
+                                 	;PATA 3 ARRIBA
+000665 e0a0                      	LDI		XL,LOW(ANG_YAW_0)
+000666 e0b5                      	LDI		XH,HIGH(ANG_YAW_0)
+000667 df7c                      	RCALL	YAW_LEG
+                                 	;PATA 3 A 0∞
+                                 
+000668 e026                      	LDI		LEG_L,LOW(LEG_3)
+000669 e035                      	LDI		LEG_H,HIGH(LEG_3)
+00066a e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+00066b e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+00066c df73                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ABAJO
+00066d e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+00066e e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+00066f df74                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 45∞
+                                 
+000670 d9d4                      	RCALL DELAY_10_S
+                                 
+                                   TURN_RIGHT_MOVE_3:
+000671 e024                      	LDI		LEG_L,LOW(LEG_2)
+000672 e033                      	LDI		LEG_H,HIGH(LEG_2)
+000673 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000674 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000675 df6a                      	RCALL	ROLL_LEG
+                                 	;PATA 1 ARRIBA
+000676 e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+000677 e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+000678 df6b                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 90∞
+                                 
+000679 e026                      	LDI		LEG_L,LOW(LEG_3)
+00067a e035                      	LDI		LEG_H,HIGH(LEG_3)
+00067b e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+00067c e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+00067d df62                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ARRIBA
+00067e e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+00067f e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+000680 df63                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 90∞
+                                 
+000681 d9c3                      	RCALL DELAY_10_S
+                                 
+000682 df3c                      	RCALL	INITIAL_POSITION
+                                 
+000683 9508                      	RET
+                                 
+                                 
+                                 TURN_LEFT:
+                                   TURN_LEFT_MOVE_1:
+000684 e022                      	LDI		LEG_L,LOW(LEG_1)
+000685 e031                      	LDI		LEG_H,HIGH(LEG_1)
+000686 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000687 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000688 df57                      	RCALL	ROLL_LEG
+                                 	;PATA 1 ARRIBA
+000689 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+00068a e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+00068b df58                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 90∞
+                                 
+00068c e024                      	LDI		LEG_L,LOW(LEG_2)
+00068d e033                      	LDI		LEG_H,HIGH(LEG_2)
+00068e e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+00068f e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+000690 df4f                      	RCALL	ROLL_LEG
+                                 	;PATA 2 ABAJO
+000691 e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+000692 e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+000693 df50                      	RCALL	YAW_LEG
+                                 	;PATA 2 A 135∞
+                                 
+000694 e026                      	LDI		LEG_L,LOW(LEG_3)
+000695 e035                      	LDI		LEG_H,HIGH(LEG_3)
+000696 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+000697 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+000698 df47                      	RCALL	ROLL_LEG
+                                 	;PATA 3 ABAJO
+000699 e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+00069a e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+00069b df48                      	RCALL	YAW_LEG
+                                 	;PATA 3 A 45∞
+                                 
+00069c e028                      	LDI		LEG_L,LOW(LEG_4)
+00069d e037                      	LDI		LEG_H,HIGH(LEG_4)
+00069e e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+00069f e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0006a0 df3f                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ARRIBA
+0006a1 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+0006a2 e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+0006a3 df40                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 90∞
+                                 
+0006a4 d9a0                      	RCALL DELAY_10_S
+                                 
+                                   TURN_LEFT_MOVE_2:
+0006a5 e022                      	LDI		LEG_L,LOW(LEG_1)
+0006a6 e031                      	LDI		LEG_H,HIGH(LEG_1)
+0006a7 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+0006a8 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+0006a9 df36                      	RCALL	ROLL_LEG
+                                 	;PATA 1 ABAJO
+0006aa e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+0006ab e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+0006ac df37                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 135∞
+                                 
+0006ad e024                      	LDI		LEG_L,LOW(LEG_2)
+0006ae e033                      	LDI		LEG_H,HIGH(LEG_2)
+0006af e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0006b0 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0006b1 df2e                      	RCALL	ROLL_LEG
+                                 	;PATA 2 ARRIBA
+0006b2 e9a6                      	LDI		XL,LOW(ANG_YAW_180)
+0006b3 e0b5                      	LDI		XH,HIGH(ANG_YAW_180)
+0006b4 df2f                      	RCALL	YAW_LEG
+                                 	;PATA 2 A 180∞
+                                 
+0006b5 e026                      	LDI		LEG_L,LOW(LEG_3)
+0006b6 e035                      	LDI		LEG_H,HIGH(LEG_3)
+0006b7 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0006b8 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0006b9 df26                      	RCALL	ROLL_LEG
+                                 	;PATA 3 ARRIBA
+0006ba e0a0                      	LDI		XL,LOW(ANG_YAW_0)
+0006bb e0b5                      	LDI		XH,HIGH(ANG_YAW_0)
+0006bc df27                      	RCALL	YAW_LEG
+                                 	;PATA 3 A 0∞
+                                 
+0006bd e028                      	LDI		LEG_L,LOW(LEG_4)
+0006be e037                      	LDI		LEG_H,HIGH(LEG_4)
+0006bf e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+0006c0 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+0006c1 df1e                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ABAJO
+0006c2 e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+0006c3 e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+0006c4 df1f                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 45∞
+                                 
+0006c5 d97f                      	RCALL DELAY_10_S
+                                 
+                                   TURN_LEFT_MOVE_3:
+0006c6 e022                      	LDI		LEG_L,LOW(LEG_1)
+0006c7 e031                      	LDI		LEG_H,HIGH(LEG_1)
+0006c8 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0006c9 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0006ca df15                      	RCALL	ROLL_LEG
+                                 	;PATA 1 ARRIBA
+0006cb e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+0006cc e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+0006cd df16                      	RCALL	YAW_LEG
+                                 	;PATA 1 A 90∞
+                                 
+0006ce e028                      	LDI		LEG_L,LOW(LEG_4)
+0006cf e037                      	LDI		LEG_H,HIGH(LEG_4)
+0006d0 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+0006d1 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+0006d2 df0d                      	RCALL	ROLL_LEG
+                                 	;PATA 4 ARRIBA
+0006d3 e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+0006d4 e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+0006d5 df0e                      	RCALL	YAW_LEG
+                                 	;PATA 4 A 90∞
+                                 
+0006d6 d96e                      	RCALL DELAY_10_S
+                                 
+0006d7 dee7                      	RCALL	INITIAL_POSITION
+                                 
+0006d8 9508                      	RET
+                                 
+                                 
+                                 
+                                 STAND_GREET_LEFT: ;SALUDA
+                                 
+0006d9 e022                      	LDI		LEG_L,LOW(LEG_1)
+0006da e031                      	LDI		LEG_H,HIGH(LEG_1)
+0006db e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+0006dc e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+0006dd df02                      	RCALL	ROLL_LEG	
+                                 	;PATA 2 ARRIBA
+0006de e8a0                      	LDI		XL,LOW(ANG_YAW_150)
+0006df e0b5                      	LDI		XH,HIGH(ANG_YAW_150)
+0006e0 df03                      	RCALL	YAW_LEG	
+                                 	;PATA 2 A 90∞
+                                 
+0006e1 e024                      	LDI		LEG_L,LOW(LEG_2)
+0006e2 e033                      	LDI		LEG_H,HIGH(LEG_2)
+0006e3 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+0006e4 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+0006e5 defa                      	RCALL	ROLL_LEG	
+                                 	;PATA 2 ARRIBA
+0006e6 e8a0                      	LDI		XL,LOW(ANG_YAW_150)
+0006e7 e0b5                      	LDI		XH,HIGH(ANG_YAW_150)
+0006e8 defb                      	RCALL	YAW_LEG	
+                                 	;PATA 2 A 90∞
+                                 
+0006e9 e026                      	LDI		LEG_L,LOW(LEG_3)
+0006ea e035                      	LDI		LEG_H,HIGH(LEG_3)
+0006eb e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+0006ec e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+0006ed def2                      	RCALL	ROLL_LEG	
+                                 	;PATA 2 ARRIBA
+0006ee e3a2                      	LDI		XL,LOW(ANG_YAW_60)
+0006ef e0b5                      	LDI		XH,HIGH(ANG_YAW_60)
+0006f0 def3                      	RCALL	YAW_LEG	
+                                 	;PATA 2 A 90∞
+                                 
+0006f1 e028                      	LDI		LEG_L,LOW(LEG_4)
+0006f2 e037                      	LDI		LEG_H,HIGH(LEG_4)
+0006f3 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+0006f4 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+0006f5 deea                      	RCALL	ROLL_LEG	
+                                 	;PATA 2 ARRIBA
+0006f6 e3a2                      	LDI		XL,LOW(ANG_YAW_60)
+0006f7 e0b5                      	LDI		XH,HIGH(ANG_YAW_60)
+0006f8 deeb                      	RCALL	YAW_LEG	
+                                 	;PATA 2 A 90∞
+                                 
+0006f9 d07e                      	RCALL MOVEMENT_DELAY
+                                 
+                                   GREET_LEFT:
+0006fa e022                      	LDI		LEG_L,LOW(LEG_1)
+0006fb e031                      	LDI		LEG_H,HIGH(LEG_1)
+0006fc e6a0                      	LDI		XL,LOW(ANG_ROLL_180)
+0006fd e0b6                      	LDI		XH,HIGH(ANG_ROLL_180)
+0006fe dee1                      	RCALL	ROLL_LEG	
+                                 
+0006ff d078                      	RCALL MOVEMENT_DELAY
+                                 
+000700 e003                      	LDI R16, 3
+                                 
+                                   LOOP_GREET_LEFT:
+000701 e9a6                      	LDI		XL,LOW(ANG_YAW_180)
+000702 e0b5                      	LDI		XH,HIGH(ANG_YAW_180)
+000703 dee0                      	RCALL	YAW_LEG	
+                                 
+000704 d940                      	RCALL DELAY_10_S
+                                 
+000705 e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+000706 e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+000707 dedc                      	RCALL	YAW_LEG	
+                                 
+000708 d93c                      	RCALL DELAY_10_S
+000709 950a                      	DEC R16
+                                 
+00070a f7b1                      	BRNE LOOP_GREET_LEFT
+00070b deb3                      	RCALL INITIAL_POSITION
+00070c 9508                      	RET
+                                 
+                                 ;HAY QUE INICIALIZAR X CON EL VALOR DEL ANGULO	EN EL QUE SE QUIERE PONER LA PATA
+                                 MOVEMENT_LEG:
+00070d 93af                      	PUSH	XL
+00070e 93bf                      	PUSH	XH
+                                 
+00070f e2a8                      	LDI		XL,LOW(ANG_ROLL_60)
+000710 e0b6                      	LDI		XH,HIGH(ANG_ROLL_60)
+                                 
+000711 d95b                      	RCALL	FIND_ANG_LEG
+000712 2f72                      	MOV 	R23,LEG_L
+                                 ;	LDI 	R24,ANG_L
+                                 ;	LDI 	R25,ANG_H
+000713 de93                      	RCALL 	PCA9685_MOVE
+000714 d063                      	RCALL 	MOVEMENT_DELAY
+                                 	
+000715 91bf                      	POP		XH
+000716 91af                      	POP		XL
+                                 
+000717 d955                      	RCALL	FIND_ANG_LEG
+000718 2f73                      	MOV 	R23,LEG_H
+                                 ;	MOV 	R24,ANG_L
+                                 ;	MOV 	R25,ANG_H
+000719 de8d                      	RCALL 	PCA9685_MOVE
+00071a d05d                      	RCALL 	MOVEMENT_DELAY
+                                 
+00071b e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+00071c e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+                                 
+00071d d94f                      	RCALL	FIND_ANG_LEG
+                                 
+00071e 2f72                      	MOV 	R23,LEG_L
+                                 ;	LDI 	R24,LOW(500)
+                                 ;	LDI 	R25,HIGH(500)
+00071f de87                      	RCALL 	PCA9685_MOVE
+000720 d057                      	RCALL 	MOVEMENT_DELAY
+                                 
+000721 9508                      	RET
+                                 
+                                 ROLL_LEG_TEST:
+000722 e0a4                      	LDI		XL,LOW(ANG_ROLL_0)
+000723 e0b6                      	LDI		XH,HIGH(ANG_ROLL_0)
+000724 debb                      	RCALL	ROLL_LEG
+000725 d052                      	RCALL 	MOVEMENT_DELAY
+                                 
+000726 e1a2                      	LDI		XL,LOW(ANG_ROLL_30)
+000727 e0b6                      	LDI		XH,HIGH(ANG_ROLL_30)
+000728 deb7                      	RCALL	ROLL_LEG
+000729 d04e                      	RCALL 	MOVEMENT_DELAY
+                                 
+00072a e2a0                      	LDI		XL,LOW(ANG_ROLL_45)
+00072b e0b6                      	LDI		XH,HIGH(ANG_ROLL_45)
+00072c deb3                      	RCALL	ROLL_LEG
+00072d d04a                      	RCALL 	MOVEMENT_DELAY
+                                 
+00072e e2a8                      	LDI		XL,LOW(ANG_ROLL_60)
+00072f e0b6                      	LDI		XH,HIGH(ANG_ROLL_60)
+000730 deaf                      	RCALL	ROLL_LEG
+000731 d046                      	RCALL 	MOVEMENT_DELAY
+                                 
+000732 e3a6                      	LDI		XL,LOW(ANG_ROLL_90)
+000733 e0b6                      	LDI		XH,HIGH(ANG_ROLL_90)
+000734 deab                      	RCALL	ROLL_LEG
+000735 d042                      	RCALL 	MOVEMENT_DELAY
+                                 
+000736 e4a4                      	LDI		XL,LOW(ANG_ROLL_120)
+000737 e0b6                      	LDI		XH,HIGH(ANG_ROLL_120)
+000738 dea7                      	RCALL	ROLL_LEG
+000739 d03e                      	RCALL 	MOVEMENT_DELAY
+                                 
+00073a e5a2                      	LDI		XL,LOW(ANG_ROLL_150)
+00073b e0b6                      	LDI		XH,HIGH(ANG_ROLL_150)
+00073c dea3                      	RCALL	ROLL_LEG
+00073d d03a                      	RCALL 	MOVEMENT_DELAY
+                                 
+00073e e6a0                      	LDI		XL,LOW(ANG_ROLL_180)
+00073f e0b6                      	LDI		XH,HIGH(ANG_ROLL_180)
+000740 de9f                      	RCALL	ROLL_LEG
+000741 d036                      	RCALL 	MOVEMENT_DELAY
+                                 
+000742 9508                      	RET
+                                 	
+                                 YAW_LEG_TEST:
+000743 e0a0                      	LDI		XL,LOW(ANG_YAW_0)
+000744 e0b5                      	LDI		XH,HIGH(ANG_YAW_0)
+000745 de9e                      	RCALL	YAW_LEG
+000746 d031                      	RCALL 	MOVEMENT_DELAY
+                                 
+000747 e0a8                      	LDI		XL,LOW(ANG_YAW_15)
+000748 e0b5                      	LDI		XH,HIGH(ANG_YAW_15)
+000749 de9a                      	RCALL	YAW_LEG
+00074a d02d                      	RCALL 	MOVEMENT_DELAY
+                                 
+                                 
+00074b e1a6                      	LDI		XL,LOW(ANG_YAW_30)
+00074c e0b5                      	LDI		XH,HIGH(ANG_YAW_30)
+00074d de96                      	RCALL	YAW_LEG
+00074e d029                      	RCALL 	MOVEMENT_DELAY
+                                 
+00074f e2a4                      	LDI		XL,LOW(ANG_YAW_45)
+000750 e0b5                      	LDI		XH,HIGH(ANG_YAW_45)
+000751 de92                      	RCALL	YAW_LEG
+000752 d025                      	RCALL 	MOVEMENT_DELAY
+                                 
+000753 e3a2                      	LDI		XL,LOW(ANG_YAW_60)
+000754 e0b5                      	LDI		XH,HIGH(ANG_YAW_60)
+000755 de8e                      	RCALL	YAW_LEG
+000756 d021                      	RCALL 	MOVEMENT_DELAY
+                                 
+000757 e4a0                      	LDI		XL,LOW(ANG_YAW_75)
+000758 e0b5                      	LDI		XH,HIGH(ANG_YAW_75)
+000759 de8a                      	RCALL	YAW_LEG
+00075a d01d                      	RCALL 	MOVEMENT_DELAY
+                                 
+                                 
+00075b e4a8                      	LDI		XL,LOW(ANG_YAW_90)
+00075c e0b5                      	LDI		XH,HIGH(ANG_YAW_90)
+00075d de86                      	RCALL	YAW_LEG
+00075e d019                      	RCALL 	MOVEMENT_DELAY
+                                 
+00075f e5a6                      	LDI		XL,LOW(ANG_YAW_105)
+000760 e0b5                      	LDI		XH,HIGH(ANG_YAW_105)
+000761 de82                      	RCALL	YAW_LEG
+000762 d015                      	RCALL 	MOVEMENT_DELAY
+                                 
+                                 
+000763 e6a4                      	LDI		XL,LOW(ANG_YAW_120)
+000764 e0b5                      	LDI		XH,HIGH(ANG_YAW_120)
+000765 de7e                      	RCALL	YAW_LEG
+000766 d011                      	RCALL 	MOVEMENT_DELAY
+                                 
+000767 e7a2                      	LDI		XL,LOW(ANG_YAW_135)
+000768 e0b5                      	LDI		XH,HIGH(ANG_YAW_135)
+000769 de7a                      	RCALL	YAW_LEG
+00076a d00d                      	RCALL 	MOVEMENT_DELAY
+                                 
+00076b e8a0                      	LDI		XL,LOW(ANG_YAW_150)
+00076c e0b5                      	LDI		XH,HIGH(ANG_YAW_150)
+00076d de76                      	RCALL	YAW_LEG
+00076e d009                      	RCALL 	MOVEMENT_DELAY
+                                 
+00076f e8a8                      	LDI		XL,LOW(ANG_YAW_165)
+000770 e0b5                      	LDI		XH,HIGH(ANG_YAW_165)
+000771 de72                      	RCALL	YAW_LEG
+000772 d005                      	RCALL 	MOVEMENT_DELAY
+                                 
+000773 e9a6                      	LDI		XL,LOW(ANG_YAW_180)
+000774 e0b5                      	LDI		XH,HIGH(ANG_YAW_180)
+000775 de6e                      	RCALL	YAW_LEG
+000776 d001                      	RCALL 	MOVEMENT_DELAY
+                                 
+000777 9508                      	RET
+                                 
+                                 MOVEMENT_DELAY:
+000778 936f                      	push r22
+000779 938f                      	push r24
+00077a 939f                      	push r25
+00077b e664                      	ldi r22, 100 ;
+                                 MOVEMENT_OUTER_LOOP:
+00077c e58a                      	ldi r24, low(90)
+00077d e090                      	ldi r25, high(90)
+                                 MOVEMENT_DELAY_LOOP:
+00077e 9601                      	adiw r25:r24,1
+00077f f7f1                      	brne MOVEMENT_DELAY_LOOP
+000780 0000                      	nop
+000781 956a                      	dec r22
+000782 f7c9                      	brne MOVEMENT_OUTER_LOOP
+000783 919f                      	pop r25
+000784 918f                      	pop r24
+000785 916f                      	pop r22
+000786 9508                      	ret
+                                 
+                                 
+                                 
+                                 .INCLUDE 	"HCSR04.INC"
+                                 
+000787 930f                      	PUSH	R16
+000788 2700                      	clr 	r16 ;
+000789 9300 0080                 	sts 	TCCR1A, r16 ; normal mode timer
+00078b 9300 0082                 	sts 	TCCR1C, r16 ; just set zero, using normal mode
+                                 	
+                                 	; Next INT0
+                                 	; int0 interupt PD2
+00078d 9852                      	cbi 	DDRD, 2 ; set for input
+00078e e001                      	ldi 	r16, 0b00000001
+00078f 9300 0069                 	sts 	EICRA, r16 ; any change on int0 to trigger interrupt
+000791 98e8                      	CBI 	EIMSK,0
+000792 9a3d                      	sbi 	DDRC, 5 ; output Portc5, Arduino pin Analog in 5, trigger the HC-SR04
+000793 910f                      	POP 	R16
+000794 9508                      	RET
+                                  	
+                                 
+                                 HCSR04_READ:
+000795 2766                      	clr 	r22 ; test value, so the led stays on long enough to see will be 0xFF
+000796 2755                      	clr 	r21 ;test value, will be 0x24 with a 16Mhz clock
+000797 9360 0085                 	sts 	TCNT1H,r22 ; high byte Order write (and reading) to 16 bit registers must be done in
+000799 9350 0084                 	sts 	TCNT1L,r21 ; proper order, see datasheet
+00079b 94e8                      	CLT
+00079c 2700                      	CLR 	R16
+00079d 9300 0016                 	STS 	TIFR1,R16 	; CLEAR OVF FLAG
+00079f e001                      	LDI 	R16,0x01
+0007a0 9300 006f                 	STS 	TIMSK1, R16	; overflow inturrupt enable
+0007a2 9ae8                      	SBI 	EIMSK,0		;ENBLE INT0
+0007a3 9478                      	SEI
+0007a4 e001                      	ldi 	r16, 0b00000001
+0007a5 9300 0081                 	sts 	TCCR1B, r16 ; start the timer with clk 1
+0007a7 9478                      	sei 	;turn interupts back on	
+0007a8 9a45                      	sbi 	PORTC,5 ; start the trigger
+0007a9 e104                      	LDI 	R16,20
+                                 HCSR04_LOOP2:
+0007aa 0000                      	NOP
+0007ab 950a                      	DEC 	R16	
+0007ac f7e9                      	BRNE 	HCSR04_LOOP2	
+0007ad 9845                      	CBI 	PORTC,5 ;stop the trigger	
+                                 HCSR04_LOOP:
+0007ae f7fe                      	BRTC 	HCSR04_LOOP		;IF T==0 => LOOP
+0007af 98e8                      	CBI 	EIMSK,0
+0007b0 9845                      	CBI 	PORTC, 5 
+0007b1 9508                      	RET
+                                 
+                                 
+                                 	
+                                 
+                                 ; connect a led to PORTC5, with the longer delay set above ie: ldi r27, 0x00 ; zero so long enough delay to see a LED
+                                 ; generic delay so have time to see LEDs flash. If you don't know how to connect a LED yet,Joe Pardue's
+                                 ;‚ÄúAduino Workshop‚Äù is a good place to start (lots more than just connecting LEDs).
+                                 delay_05:
+0007b2 936f                      	push r22
+0007b3 938f                      	push r24
+0007b4 939f                      	push r25
+0007b5 e664                      	ldi r22, 100 ;
+                                 outer_loop:
+0007b6 e58f                      	ldi r24, low(0137)
+0007b7 e090                      	ldi r25, high(0137)
+                                 delay_loop:
+0007b8 9601                      	adiw r25:r24,1
+0007b9 f7f1                      	brne delay_loop
+0007ba 0000                      	nop
+0007bb 956a                      	dec r22
+0007bc f7c9                      	brne outer_loop
+0007bd 919f                      	pop r25
+0007be 918f                      	pop r24
+0007bf 916f                      	pop r22
+0007c0 9508                      	ret
+                                 
+                                 
+                                 EXT_INT0:
+0007c1 9a2d                      	SBI PORTB,5
+0007c2 98e8                      	CBI 	EIMSK,0
+0007c3 9468                      	SET
+0007c4 2700                      	clr 	r16 
+0007c5 9300 0081                 	sts 	TCCR1B, r16 
+0007c7 9300 0081                 	sts 	TCCR1B, r16 ;stop the clock has the time 
+0007c9 9360 0085                 	sts 	TCNT1H, r22 ; high byte Order write (and reading) to 16 bit registers must be done in
+0007cb 9350 0084                 	sts 	TCNT1L, r21 ; proper order, see datasheet
+0007cd 9518                      	reti
+                                 
+                                 
+                                 TIM1_OVF:
+0007ce 982d                      	CBI PORTB,5
+0007cf 98e8                      	CBI 	EIMSK,0
+0007d0 2700                      	clr 	r16 
+0007d1 9300 0081                 	sts 	TCCR1B, r16 
+0007d3 9468                      	SET
+0007d4 ef6f                      	LDI 	R22, 0xFF
+0007d5 ef5f                      	LDI 	R21, 0xFF
+0007d6 9518                      	reti
+
+
+RESOURCE USE INFORMATION
+------------------------
+
+Notice:
+The register and instruction counts are symbol table hit counts,
+and hence implicitly used resources are not counted, eg, the
+'lpm' instruction without operands implicitly uses r0 and z,
+none of which are counted.
+
+x,y,z are separate entities in the symbol table and are
+counted separately from r26..r31 here.
+
+.dseg memory usage only counts static data declared with .byte
+
+"ATmega328P" register use summary:
+x  :   3 y  :   0 z  :   1 r0 :   0 r1 :   0 r2 :   0 r3 :   0 r4 :   0 
+r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
+r13:   0 r14:   0 r15:   0 r16:  26 r17:  26 r18:  41 r19:  41 r20:  38 
+r21:  24 r22:  16 r23:  22 r24:  27 r25:  27 r26: 121 r27: 121 r28:   0 
+r29:   0 r30:  21 r31:  21 
+Registers used: 16 out of 35 (45.7%)
+
+"ATmega328P" instruction use summary:
+.lds  :   0 .sts  :   0 adc   :   0 add   :   1 adiw  :   2 and   :   0 
+andi  :   2 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :   2 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   0 brlt  :   0 brmi  :   0 
+brne  :  11 brpl  :   0 brsh  :   0 brtc  :   1 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :   0 cbi   :   9 cbr   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :   6 cls   :   0 
+clt   :   1 clv   :   0 clz   :   0 com   :   0 cp    :   0 cpc   :   0 
+cpi   :   1 cpse  :   0 dec   :   9 eor   :   0 fmul  :   0 fmuls :   0 
+fmulsu:   0 icall :   0 ijmp  :   0 in    :   0 inc   :   1 jmp   :   1 
+ld    :   2 ldd   :   0 ldi   : 451 lds   :   6 lpm   :   1 lsl   :   2 
+lsr   :   1 mov   :   9 movw  :   0 mul   :   0 muls  :   0 mulsu :   0 
+neg   :   0 nop   :   3 or    :   0 ori   :   0 out   :   4 pop   :  19 
+push  :  19 rcall : 240 ret   :  54 reti  :   2 rjmp  :   9 rol   :   0 
+ror   :   0 sbc   :   0 sbci  :   0 sbi   :   6 sbic  :   0 sbis  :   0 
+sbiw  :   0 sbr   :   0 sbrc  :   0 sbrs  :   3 sec   :   0 seh   :   0 
+sei   :   2 sen   :   0 ser   :   0 ses   :   0 set   :   2 sev   :   0 
+sez   :   0 sleep :   0 spm   :   0 st    :   1 std   :   0 sts   :  20 
+sub   :   0 subi  :   0 swap  :   0 tst   :   0 wdr   :   0 
+Instructions used: 34 out of 113 (30.1%)
+
+"ATmega328P" memory use summary [bytes]:
+Segment   Begin    End      Code   Data   Used    Size   Use%
+---------------------------------------------------------------
+[.cseg] 0x000000 0x000fae   1860    168   2028   32768   6.2%
+[.dseg] 0x000100 0x000668      0    168    168    2048   8.2%
+[.eseg] 0x000000 0x000000      0      0      0    1024   0.0%
+
+Assembly complete, 0 errors, 2 warnings
