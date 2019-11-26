@@ -26,23 +26,24 @@
   <FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\Proyecto.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <MAIN><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>25</LINE></MAIN>
+  <MAIN><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>18</LINE></MAIN>
   <EXT_INT0><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>72</LINE></EXT_INT0>
   <TIM1_OVF><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>84</LINE></TIM1_OVF>
   <HC05_RECEPTION_HANDLER><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HC05.INC</FILE><LINE>22</LINE></HC05_RECEPTION_HANDLER>
-  <INIC_SP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>26</LINE></INIC_SP>
   <INIC_ANGULOS><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>59</LINE></INIC_ANGULOS>
-  <MOVEMENT_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>19</LINE></MOVEMENT_SETUP>
+  <MOVEMENT_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>14</LINE></MOVEMENT_SETUP>
   <HC05_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HC05.INC</FILE><LINE>1</LINE></HC05_SETUP>
-  <MAIN_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>44</LINE></MAIN_LOOP>
-  <TURN_ON><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>48</LINE></TURN_ON>
-  <TURN_OFF><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>53</LINE></TURN_OFF>
-  <ERRLOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>58</LINE></ERRLOOP>
-  <DELAY_10_S><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>62</LINE></DELAY_10_S>
-  <LOOP_DELAY_1_S><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>65</LINE></LOOP_DELAY_1_S>
-  <DELAY_100_MS><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>73</LINE></DELAY_100_MS>
-  <LOOP_DELAY_1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>77</LINE></LOOP_DELAY_1>
-  <LOOP_DELAY_2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>79</LINE></LOOP_DELAY_2>
+  <STAND_GREET_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>444</LINE></STAND_GREET_LEFT>
+  <MAIN_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>38</LINE></MAIN_LOOP>
+  <MOVE_FORWARD><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>83</LINE></MOVE_FORWARD>
+  <TURN_ON><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>43</LINE></TURN_ON>
+  <TURN_OFF><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>48</LINE></TURN_OFF>
+  <ERRLOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>53</LINE></ERRLOOP>
+  <DELAY_10_S><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>57</LINE></DELAY_10_S>
+  <LOOP_DELAY_1_S><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>60</LINE></LOOP_DELAY_1_S>
+  <DELAY_100_MS><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>68</LINE></DELAY_100_MS>
+  <LOOP_DELAY_1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>72</LINE></LOOP_DELAY_1>
+  <LOOP_DELAY_2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\main.asm</FILE><LINE>74</LINE></LOOP_DELAY_2>
   <ANG_YAW_0><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>13</LINE></ANG_YAW_0>
   <ANG_YAW_15><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>15</LINE></ANG_YAW_15>
   <ANG_YAW_30><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>17</LINE></ANG_YAW_30>
@@ -111,42 +112,40 @@
   <ROM_ANG_ROLL_150><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>435</LINE></ROM_ANG_ROLL_150>
   <ROM_ANG_ROLL_180><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>436</LINE></ROM_ANG_ROLL_180>
   <SERVO_TEST_ANG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>325</LINE></SERVO_TEST_ANG>
-  <PCA9685_MOVE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>47</LINE></PCA9685_MOVE>
-  <MOVEMENT_DELAY><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>678</LINE></MOVEMENT_DELAY>
+  <PCA9685_MOVE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>39</LINE></PCA9685_MOVE>
+  <MOVEMENT_DELAY><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>676</LINE></MOVEMENT_DELAY>
   <SERVO_TEST_ANG_TOTAL><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\ANGULOS.INC</FILE><LINE>342</LINE></SERVO_TEST_ANG_TOTAL>
-  <I2C_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>21</LINE></I2C_SETUP>
-  <I2C_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>48</LINE></I2C_START>
-  <WAIT_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>54</LINE></WAIT_START>
-  <I2C_PUT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>72</LINE></I2C_PUT>
-  <NEXT1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>74</LINE></NEXT1>
-  <WAIT_DONE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>80</LINE></WAIT_DONE>
-  <I2C_GET><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>87</LINE></I2C_GET>
-  <WAIT_FOR_BYTE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>89</LINE></WAIT_FOR_BYTE>
-  <I2C_STOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>98</LINE></I2C_STOP>
-  <Check1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>103</LINE></Check1>
-  <PCA9685_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>10</LINE></PCA9685_SETUP>
-  <INITIAL_POSITION><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>25</LINE></INITIAL_POSITION>
-  <ROLL_LEG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>74</LINE></ROLL_LEG>
-  <YAW_LEG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>81</LINE></YAW_LEG>
-  <MOVE_FORWARD><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>88</LINE></MOVE_FORWARD>
-  <MOVE_RIGHT_FORWARD><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>147</LINE></MOVE_RIGHT_FORWARD>
-  <MOVE_LEFT_FORWARD><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>97</LINE></MOVE_LEFT_FORWARD>
-  <TURN_RIGHT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>198</LINE></TURN_RIGHT>
-  <TURN_RIGHT_MOVE_1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>199</LINE></TURN_RIGHT_MOVE_1>
-  <TURN_RIGHT_MOVE_2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>246</LINE></TURN_RIGHT_MOVE_2>
-  <TURN_RIGHT_MOVE_3><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>293</LINE></TURN_RIGHT_MOVE_3>
-  <TURN_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>323</LINE></TURN_LEFT>
-  <TURN_LEFT_MOVE_1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>324</LINE></TURN_LEFT_MOVE_1>
-  <TURN_LEFT_MOVE_2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>371</LINE></TURN_LEFT_MOVE_2>
-  <TURN_LEFT_MOVE_3><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>418</LINE></TURN_LEFT_MOVE_3>
-  <STAND_GREET_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>449</LINE></STAND_GREET_LEFT>
-  <GREET_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>497</LINE></GREET_LEFT>
-  <LOOP_GREET_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>508</LINE></LOOP_GREET_LEFT>
-  <MOVEMENT_LEG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>527</LINE></MOVEMENT_LEG>
-  <ROLL_LEG_TEST><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>564</LINE></ROLL_LEG_TEST>
-  <YAW_LEG_TEST><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>607</LINE></YAW_LEG_TEST>
-  <MOVEMENT_OUTER_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>683</LINE></MOVEMENT_OUTER_LOOP>
-  <MOVEMENT_DELAY_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>686</LINE></MOVEMENT_DELAY_LOOP>
+  <I2C_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>18</LINE></I2C_SETUP>
+  <I2C_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>43</LINE></I2C_START>
+  <WAIT_START><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>48</LINE></WAIT_START>
+  <I2C_PUT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>65</LINE></I2C_PUT>
+  <NEXT1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>66</LINE></NEXT1>
+  <WAIT_DONE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>72</LINE></WAIT_DONE>
+  <I2C_GET><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>78</LINE></I2C_GET>
+  <WAIT_FOR_BYTE><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>79</LINE></WAIT_FOR_BYTE>
+  <I2C_STOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>87</LINE></I2C_STOP>
+  <Check1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\I2C.INC</FILE><LINE>91</LINE></Check1>
+  <PCA9685_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\PCA9685.INC</FILE><LINE>9</LINE></PCA9685_SETUP>
+  <INITIAL_POSITION><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>20</LINE></INITIAL_POSITION>
+  <ROLL_LEG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>69</LINE></ROLL_LEG>
+  <YAW_LEG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>76</LINE></YAW_LEG>
+  <MOVE_RIGHT_FORWARD><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>142</LINE></MOVE_RIGHT_FORWARD>
+  <MOVE_LEFT_FORWARD><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>92</LINE></MOVE_LEFT_FORWARD>
+  <TURN_RIGHT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>193</LINE></TURN_RIGHT>
+  <TURN_RIGHT_MOVE_1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>194</LINE></TURN_RIGHT_MOVE_1>
+  <TURN_RIGHT_MOVE_2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>241</LINE></TURN_RIGHT_MOVE_2>
+  <TURN_RIGHT_MOVE_3><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>288</LINE></TURN_RIGHT_MOVE_3>
+  <TURN_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>318</LINE></TURN_LEFT>
+  <TURN_LEFT_MOVE_1><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>319</LINE></TURN_LEFT_MOVE_1>
+  <TURN_LEFT_MOVE_2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>366</LINE></TURN_LEFT_MOVE_2>
+  <TURN_LEFT_MOVE_3><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>413</LINE></TURN_LEFT_MOVE_3>
+  <GREET_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>492</LINE></GREET_LEFT>
+  <LOOP_GREET_LEFT><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>503</LINE></LOOP_GREET_LEFT>
+  <MOVEMENT_LEG><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>525</LINE></MOVEMENT_LEG>
+  <ROLL_LEG_TEST><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>562</LINE></ROLL_LEG_TEST>
+  <YAW_LEG_TEST><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>605</LINE></YAW_LEG_TEST>
+  <MOVEMENT_OUTER_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>681</LINE></MOVEMENT_OUTER_LOOP>
+  <MOVEMENT_DELAY_LOOP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\MOVEMENT.INC</FILE><LINE>684</LINE></MOVEMENT_DELAY_LOOP>
   <HCSR04_SETUP><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>1</LINE></HCSR04_SETUP>
   <HCSR04_READ><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>18</LINE></HCSR04_READ>
   <HCSR04_LOOP2><FILE>C:\Programming\2019-2c-primer-proyecto-arilow\codigo\HCSR04.INC</FILE><LINE>35</LINE></HCSR04_LOOP2>

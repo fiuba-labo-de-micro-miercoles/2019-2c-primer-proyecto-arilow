@@ -1,17 +1,17 @@
 HCSR04_SETUP:
-	PUSH	R16
-	clr 	r16 ;
-	sts 	TCCR1A, r16 ; normal mode timer
-	sts 	TCCR1C, r16 ; just set zero, using normal mode
+	PUSH	TEMP
+	clr 	TEMP ;
+	sts 	TCCR1A, TEMP ; normal mode timer
+	sts 	TCCR1C, TEMP ; just set zero, using normal mode
 	
 	; Next INT0
 	; int0 interupt PD2
 	cbi 	DDRD, 2 ; set for input
-	ldi 	r16, 0b00000001
-	sts 	EICRA, r16 ; any change on int0 to trigger interrupt
+	ldi 	TEMP, 0b00000001
+	sts 	EICRA, TEMP ; any change on int0 to trigger interrupt
 	CBI 	EIMSK,0
 	sbi 	DDRC, 5 ; output Portc5, Arduino pin Analog in 5, trigger the HC-SR04
-	POP 	R16
+	POP 	TEMP
 	RET
  	
 
@@ -21,20 +21,20 @@ HCSR04_READ:
 	sts 	TCNT1H,r22 ; high byte Order write (and reading) to 16 bit registers must be done in
 	sts 	TCNT1L,r21 ; proper order, see datasheet
 	CLT
-	CLR 	R16
-	STS 	TIFR1,R16 	; CLEAR OVF FLAG
-	LDI 	R16,0x01
-	STS 	TIMSK1, R16	; overflow inturrupt enable
+	CLR 	TEMP
+	STS 	TIFR1,TEMP 	; CLEAR OVF FLAG
+	LDI 	TEMP,0x01
+	STS 	TIMSK1, TEMP	; overflow inturrupt enable
 	SBI 	EIMSK,0		;ENBLE INT0
 	SEI
-	ldi 	r16, 0b00000001
-	sts 	TCCR1B, r16 ; start the timer with clk 1
+	ldi 	TEMP, 0b00000001
+	sts 	TCCR1B, TEMP ; start the timer with clk 1
 	sei 	;turn interupts back on	
 	sbi 	PORTC,5 ; start the trigger
-	LDI 	R16,20
+	LDI 	TEMP,20
 HCSR04_LOOP2:
 	NOP
-	DEC 	R16	
+	DEC 	TEMP	
 	BRNE 	HCSR04_LOOP2	
 	CBI 	PORTC,5 ;stop the trigger	
 HCSR04_LOOP:
@@ -73,9 +73,9 @@ EXT_INT0:
 	SBI PORTB,5
 	CBI 	EIMSK,0
 	SET
-	clr 	r16 
-	sts 	TCCR1B, r16 
-	sts 	TCCR1B, r16 ;stop the clock has the time 
+	clr 	TEMP 
+	sts 	TCCR1B, TEMP 
+	sts 	TCCR1B, TEMP ;stop the clock has the time 
 	sts 	TCNT1H, r22 ; high byte Order write (and reading) to 16 bit registers must be done in
 	sts 	TCNT1L, r21 ; proper order, see datasheet
 	reti
@@ -84,8 +84,8 @@ EXT_INT0:
 TIM1_OVF:
 	CBI PORTB,5
 	CBI 	EIMSK,0
-	clr 	r16 
-	sts 	TCCR1B, r16 
+	clr 	TEMP 
+	sts 	TCCR1B, TEMP 
 	SET
 	LDI 	R22, 0xFF
 	LDI 	R21, 0xFF
