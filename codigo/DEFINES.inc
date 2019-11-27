@@ -1,5 +1,4 @@
 .DEF		TEMP 					= R16
-.DEF 		STATUS 					= R17
 
 .DEF		LEG_L					= R18
 .DEF		LEG_H					= R19
