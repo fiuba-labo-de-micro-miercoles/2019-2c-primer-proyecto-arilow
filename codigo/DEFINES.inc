@@ -1,17 +1,16 @@
-.DEF		TEMP 					= R16
+.DEF		TEMP 			= R16
 
-.DEF		LEG_L					= R18
-.DEF		LEG_H					= R19
+.def 		TIMEL		    = R17     
+.def 		TIMEH		    = R18
 
-.def        I2C_DATA 				= R21
+.DEF		LEG_L			= R19
+.DEF		LEG_H			= R20
 
-.DEF		ANG_L					= R24
-.DEF		ANG_H					= R25
+.def        I2C_DATA		= R21
 
-.DEF 		SERVO_NUMBER			= R23
-.DEF		POSITION_LOW 			= R24
-.DEF 		POSITION_HIGH 			= R25
+.DEF		ANG_L			= R24
+.DEF		ANG_H			= R25
 
-;I2C.INC
-;.def        temp =r20            ;worker register
-
+.DEF 		SERVO_NUMBER	= R23
+.DEF		POSITION_LOW 	= R24
+.DEF 		POSITION_HIGH 	= R25
