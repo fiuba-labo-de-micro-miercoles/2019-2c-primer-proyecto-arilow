@@ -54,8 +54,9 @@ WAIT_START:
 	lds     temp,TWSR
 	andi    temp,0b11111000
 	cpi     temp,START
-	breq    PC+2
+	breq    RET_I2C_START
 	jmp     errloop
+  RET_I2C_START:	
 	ret
 
 ;————–PUT I2C————————————————————————–
